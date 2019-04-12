@@ -2,6 +2,8 @@
 title: Test Post
 date: '2019-04-01T12:25:31-07:00'
 draft: false
+tags:
+  - Notice
 featuredImage: /images/houses.jpg
 ---
 \## Mihi illuc postibus Learchum deique cui feri
