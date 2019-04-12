@@ -5,6 +5,7 @@ draft: false
 tags:
   - events
   - sports
+  - notice
 featuredImage: /images/stadium.jpg
 ---
 \## Et illis et cum desertum oscula Orithyian
