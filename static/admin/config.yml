@@ -17,6 +17,6 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", required: false, widget: "datetime"}
     - {label: "Draft", name: "draft", required: false, widget: "boolean", default: true}
-    - {label: "Categories (separate with a comma)", name: "tags", required: false, widget: "list"}
+    - {label: "Categories (all lowercase, separate with a comma)", name: "tags", required: false, widget: "list"}
     - {label: "Featured Image", name: "featuredImage", widget: "image"}
     - {label: "Body", name: "body", widget: "markdown"}
