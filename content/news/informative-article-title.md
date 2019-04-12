@@ -3,8 +3,8 @@ title: Informative Article Title
 date: '2019-03-28T12:08:00-07:00'
 draft: false
 tags:
-  - Crime
-  - Notice
+  - crime
+  - notice
 featuredImage: /images/garden.jpg
 ---
 Ingens vomere! \*Hinc ibi\*; opem quod fieri incidere et \*gelidas putabat\*; arma
