@@ -614,8 +614,9 @@ form button {
       width: 100%;
      }
     
-     .card {
+     .content {
         margin: 0px;
+        padding: 0px;
      }
 
     .hero {
