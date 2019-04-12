@@ -3,8 +3,8 @@ title: Welcome Event Title
 date: '2019-04-02T09:00:00-07:00'
 draft: false
 tags:
-  - Events
-  - Summer
+  - events
+  - summer
 featuredImage: /images/barbecue.jpg
 ---
 Ingens vomere! \*Hinc ibi\*; opem quod fieri incidere et \*gelidas putabat\*; arma
