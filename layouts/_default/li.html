@@ -1,0 +1,13 @@
+<div class="card">
+	<div class="heading">
+		<a href="https://{{ .Permalink}}"><h2>{{ .Title }}</h2></a>
+		<h3>{{ .Date.Format "Mon, Jan 2, 2006" }}</h3>
+	</div>
+	<img{{ with .Params.FeaturedImage }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+	{{ if gt (len .Summary) 200 }}
+		<p>{{slicestr .Summary 0 200}}...</p>
+	{{ else }}
+		<p>{{ .Summary }}</p>
+	{{ end }}
+	<a href="https://{{ .Permalink }}">Read More >></a>
+</div>

@@ -1,0 +1,32 @@
+{{ define "main" }}
+			<div class="below-fold">
+				<div class="intro">
+					<h1>Welcome to Sand Point Country Club HOA</h1>
+					<p>This is a description of our community! At this webpage you can access forms, read news, and much more. Providing updates on happenings, forms for download and print, and upcoming events.</p>
+				</div>
+				<div id="main">
+					<section>
+						<h2>Recent News</h2>
+						<div class="posts">
+							{{ range first 3 (where .Pages "Type" "news") }}
+            					{{ .Render "li"}}
+            				{{ end }}
+            				<a href="/news" class="news-link">All News >></a>
+						</div>
+					</section>
+					<aside>
+						<h2>New to the site?</h2>
+						<ul>
+							<li><a href="contact.html">Request the Member Directory</a></li>
+							<li><a href="contact.html">Join the Association's E-mail List</a></li>
+							<li><a href="https://www.nextdoor.com" target="_blank" >Join our Nextdoor group</a></li>
+							<li><a href="https://www.seattle.gov/light/streetlight/sl_handler.asp" target="_blank">Report a street light outtage</a></li>
+						</ul>
+						<h2>Upcoming Events</h2>
+						<div class="calendar-container">
+							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=spcchoa%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+   						</div>
+					</aside>
+				</div>
+			</div>
+{{ end }}

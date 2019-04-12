@@ -1,0 +1,25 @@
+{{ define "main" }}
+		<div id="main">
+			<section>
+				<h2>SPCCHOA News</h2>
+				<ul>
+					{{ $paginator := .Paginate (where .Data.Pages "Type" "news") }}
+					{{ range $paginator.Pages }}
+						{{ .Render "li"}}
+					{{ end }}
+					<!-- Hugo's default pagination template. -->
+					{{ template "_internal/pagination.html" . }}
+				</ul>
+			</section>
+			<aside>
+				<div class="card categories">
+					<h3>Categories</h3>
+					<ul id="all-tags">
+						{{ range $name, $items := .Site.Taxonomies.tags }}
+						<li><a href="/tags/{{ $name | urlize | lower }}">{{ $name }} &nbsp;<span>({{ len $items }})</span></a></li>
+						{{ end }}
+					</ul>
+				</div>
+			</aside>
+		</div>
+{{ end }}

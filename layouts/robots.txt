@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /success/
+Disallow: /calendar/
+Noindex: /404/
+Sitemap: https://spcchoa.com/sitemap.xml
+crawl-delay: 10

@@ -1,0 +1,13 @@
+{{ define "main" }}
+		<section>
+				<h2 class="txt-center">News in the "{{ .Title }}" Category</h2>
+				<ul>
+					{{ $paginator := .Paginate (where .Data.Pages "Type" "news") }}
+					{{ range $paginator.Pages }}
+						{{ .Render "li"}}
+					{{ end }}
+					<!-- Hugo's default pagination template. -->
+					{{ template "_internal/pagination.html" . }}
+				</ul>
+		</section>
+{{ end }}
