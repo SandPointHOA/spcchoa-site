@@ -3,8 +3,8 @@ title: Another Post Title
 date: '2019-03-31T12:26:22-07:00'
 draft: false
 tags:
-  - Events
-  - Sports
+  - events
+  - sports
 featuredImage: /images/stadium.jpg
 ---
 \## Et illis et cum desertum oscula Orithyian
