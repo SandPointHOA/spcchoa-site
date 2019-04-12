@@ -615,8 +615,7 @@ form button {
      }
     
      .card {
-      margin-left: 0px;
-      margin-right: 0px;
+        margin: 0px;
      }
 
     .hero {
