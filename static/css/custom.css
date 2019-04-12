@@ -611,7 +611,10 @@ form button {
 
      #main > section, #main > aside {
       width: 100%;
+      padding: 0px;
      }
+    
+     
 
     .hero {
       height: 250px;
