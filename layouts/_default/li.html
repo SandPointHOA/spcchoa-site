@@ -1,6 +1,6 @@
 <div class="card">
 	<div class="heading">
-		<a href="https://{{ .Permalink}}"><h2>{{ .Title }}</h2></a>
+		<a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
 		<h3>{{ .Date.Format "Mon, Jan 2, 2006" }}</h3>
 	</div>
 	<img{{ with .Params.FeaturedImage }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
@@ -9,5 +9,5 @@
 	{{ else }}
 		<p>{{ .Summary }}</p>
 	{{ end }}
-	<a href="https://{{ .Permalink }}">Read More >></a>
+	<a href="{{ .Permalink }}">Read More >></a>
 </div>
