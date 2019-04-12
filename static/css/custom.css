@@ -607,14 +607,17 @@ form button {
      /* Fit Content */
      #main {
       flex-direction: column;
+      padding: 0px;
      }
 
      #main > section, #main > aside {
       width: 100%;
-      padding: 0px;
      }
     
-     
+     .card {
+      margin-left: 0px;
+      margin-right: 0px;
+     }
 
     .hero {
       height: 250px;
