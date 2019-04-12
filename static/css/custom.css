@@ -617,6 +617,7 @@ form button {
      .content {
         margin: 0px;
         padding: 0px;
+        padding-top: 10px;
      }
 
     .hero {
