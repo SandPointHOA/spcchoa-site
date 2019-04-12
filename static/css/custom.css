@@ -723,6 +723,9 @@ form button {
     #regs-btn:checked ~ #regs-content {
       display: block;
     }
+    #main > section > ul {
+      padding: 0;
+    }
 }
 
 }
