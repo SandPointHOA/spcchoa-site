@@ -1,5 +1,5 @@
 {{ define "main" }}
-<form accept-charset="UTF-8" name="contact" enctype="multipart/form-data" method="POST" data-netlify="true" action="/success">
+<form accept-charset="UTF-8" name="contact" enctype="multipart/form-data" method="POST" data-netlify="true" action="/success" data-netlify-recaptcha="true">
 				<h2>Contact the HOA Board</h2>
 				<ul>	
 					<li class="single-input">
@@ -28,13 +28,14 @@
 							</div>
 						</div>
 						<div>
-							<label for="getDirectory">Recieve a Member Contact Directory:</label>
+							<label for="getDirectory">Recieve The Member Contact Directory Password:</label>
 							<div class="radios">
 								<label><input type="radio" name="getDirectory" value="yes" required="required">Yes</label>
 						  		<label><input type="radio" name="getDirectory" value="no" checked="checked">No</label>
 							</div>
 						</div>
 					</li>
+					<li><div data-netlify-recaptcha="true"></div></li>
 					<li class="single-input">
 						<button type="submit">SUBMIT</button>
 					</li>

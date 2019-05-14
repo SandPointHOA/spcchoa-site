@@ -122,8 +122,8 @@ nav {
   padding-right: 10px;
 }
 
-body a:hover {
-  color: #b7bdcf;
+body a:hover, .directory a:hover, .posts .card a:hover {
+  color: #007fff;
 }
 
 nav a, nav span {
@@ -302,10 +302,14 @@ aside li {
   margin-bottom: 30px;
 }
 
-.readable li, .readable p {
+.readable li, .readable p, .summary {
   font-size: 16px;
   letter-spacing: .03em;
   line-height: 1.75em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
 }
 
 .readable img {
@@ -356,6 +360,7 @@ aside li {
 }
 
 .card > a {
+  color: #003366;
   float: right;
   margin: 0px 15px 15px 15px;
 }
@@ -364,6 +369,10 @@ aside li {
   margin: 0;
   text-decoration: none;
   display: inline-block;
+}
+
+.heading > a > h2, .directory a {
+  color: #003366;
 }
 
 .heading > h3 {
@@ -450,16 +459,10 @@ footer {
   text-decoration: underline;
 }
 
-.copy, .address {
-
-}
-
-
 /* Board Page */
 .column {
   margin: 0px 30px 0 30px;
 }
-
 
 /* board profile cards */
 .profile {
@@ -607,10 +610,15 @@ form button {
      /* Fit Content */
      #main {
       flex-direction: column;
+      padding: 0px;
      }
 
      #main > section, #main > aside {
       width: 100%;
+     }
+    
+     .content {
+        margin: 0px;
      }
 
     .hero {
@@ -715,6 +723,9 @@ form button {
 
     #regs-btn:checked ~ #regs-content {
       display: block;
+    }
+    #main > section > ul {
+      padding: 0;
     }
 }
 

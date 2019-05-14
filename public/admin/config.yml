@@ -7,7 +7,7 @@ public_folder: "/images/"
 
 collections:
 - name: "news" # Used in routes, e.g., /admin/collections/blog
-  label: "News Post" # Used in the UI
+  label: "Article" # Used in the UI
   editor:
     preview: false
   folder: "/content/news" # The path to the folder where the documents are stored
@@ -17,6 +17,6 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", required: false, widget: "datetime"}
     - {label: "Draft", name: "draft", required: false, widget: "boolean", default: true}
-    - {label: "Categories (separate with a comma)", name: "tags", required: false, widget: "list"}
-    - {label: "Featured Image", name: "featuredImage", widget: "image"}
+    - {label: "Categories (all lowercase, separate with a comma)", name: "tags", required: false, widget: "list"}
+    - {label: "Featured Image", name: "featuredImage", required: false, widget: "image"}
     - {label: "Body", name: "body", widget: "markdown"}

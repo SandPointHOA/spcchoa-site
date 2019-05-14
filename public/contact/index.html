@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="title" content="Sand Point CC Homeowner's Association">
 		<meta name="description" content="The Sand Point Country Club Homeowners Association digital portal. Wherein members can access news, download forms, and review regulations.">
 		<meta name="keywords" content="Sandpoint, Country Club, Sand Point, Seattle, HOA, H.O.A., Homeowner's, Homeowner's Association">
 		<meta name="robots" content="index, follow">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="language" content="English">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sand Point CC Homeowner's Association</title>
+		<title>Contact Us – Sand Point CC Homeowner&#39;s Association</title>
 		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
 		<link href="/css/custom.css" rel="stylesheet">
 		<link href="/css/normalize.css" rel="stylesheet">
@@ -48,6 +47,7 @@
 						</label>
 						<div class="dropdown-content" id="about-content">
 						    <a href="/board">The Board</a>
+						    <a href="/directory">Member Directory</a>
 						    <a href="/location">Location</a>
 						</div>
 					</div>
@@ -76,7 +76,7 @@
 		</header>
         
 <div class="content">
-<form accept-charset="UTF-8" name="contact" enctype="multipart/form-data" method="POST" data-netlify="true" action="/success">
+<form accept-charset="UTF-8" name="contact" enctype="multipart/form-data" method="POST" data-netlify="true" action="/success" data-netlify-recaptcha="true">
 				<h2>Contact the HOA Board</h2>
 				<ul>	
 					<li class="single-input">
@@ -105,13 +105,14 @@
 							</div>
 						</div>
 						<div>
-							<label for="getDirectory">Recieve a Member Contact Directory:</label>
+							<label for="getDirectory">Recieve The Member Contact Directory Password:</label>
 							<div class="radios">
 								<label><input type="radio" name="getDirectory" value="yes" required="required">Yes</label>
 						  		<label><input type="radio" name="getDirectory" value="no" checked="checked">No</label>
 							</div>
 						</div>
 					</li>
+					<li><div data-netlify-recaptcha="true"></div></li>
 					<li class="single-input">
 						<button type="submit">SUBMIT</button>
 					</li>
