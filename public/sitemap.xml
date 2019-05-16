@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//localhost:1313/news/spcc-minutes-4-17-19/</loc>
+    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//localhost:1313/news/welcome-event-title/</loc>
     <lastmod>2019-04-02T09:00:00-07:00</lastmod>
   </url>
@@ -18,12 +23,13 @@
   </url>
   
   <url>
-    <loc>//localhost:1313/news/informative-article-title/</loc>
-    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
+    <loc>//localhost:1313/news/lorem-ipsum-dolor/</loc>
+    <lastmod>2019-03-30T13:36:02-07:00</lastmod>
   </url>
   
   <url>
-    <loc>//localhost:1313/board/</loc>
+    <loc>//localhost:1313/news/informative-article-title/</loc>
+    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
   </url>
   
   <url>
@@ -36,6 +42,18 @@
   
   <url>
     <loc>//localhost:1313/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/crime/</loc>
+    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/events/</loc>
+    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -55,40 +73,14 @@
   </url>
   
   <url>
-    <loc>//localhost:1313/privacy/</loc>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/security/</loc>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/solar/</loc>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/success/</loc>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/terms/</loc>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/tags/crime/</loc>
-    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/tags/events/</loc>
-    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
+    <loc>//localhost:1313/tags/minutes/</loc>
+    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//localhost:1313/news/</loc>
-    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
+    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,9 +91,21 @@
   </url>
   
   <url>
+    <loc>//localhost:1313/privacy/</loc>
+  </url>
+  
+  <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
+    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/security/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/solar/</loc>
   </url>
   
   <url>
@@ -120,6 +124,18 @@
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2019-03-28T12:08:00-07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/terms/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/success/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/board/</loc>
   </url>
   
 </urlset>
