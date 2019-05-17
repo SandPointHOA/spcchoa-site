@@ -479,7 +479,7 @@ footer {
 .user {
   width: 80px;
   height: 80px;
-  margin-top: 8px;
+  margin-top: 15px;
   color:  #003366;
 }
 
@@ -726,6 +726,12 @@ form button {
     }
     #main > section > ul {
       padding: 0;
+    }
+    
+    .profile {
+      width: 75%;
+      margin: auto;
+      margin-bottom: 20px;
     }
 }
 

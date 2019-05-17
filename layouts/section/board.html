@@ -1,80 +1,18 @@
-		{{define "main"}}	
+{{define "main"}}	
 		<h1 class="txt-center">Sand Point Maintenance Commission Board of Trustees</h1>
 			<div class="row">
 				<section class="column">
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Brent Jones</h3>
-							<p>President</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Cory Benson</h3>
-							<p>Vice President</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>John Baughn</h3>
-							<p>Treasurer</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Barbara Fruhling</h3>
-							<p>Secretary</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Reggie Evans</h3>
-							<p>Building</p>
-						</div>
-					</div>
+					{{ range sort (first 5 (where .Site.Pages "Type" "boardmember")) "Weight" }}
+					    {{ .Render "li"}}
+            		{{ end }}
 				</section>
 				<section class="column">
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Anita Hearl</h3>
-							<p>Security</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Margaret Day</h3>
-							<p>Parks</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Kevin Sutherland</h3>
-							<p>Sewer</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Mike Evans</h3>
-							<p>Roads</p>
-						</div>
-					</div>
-					<div class="profile">
-						<svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="user"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill=" #003366"/><path d="M0 0h34v24H0z" fill="none"/></svg>
-						<div>
-							<h3>Joe Flick</h3>
-							<p>Roanoke Property Mgmt</p>
-						</div>
-					</div>
+					{{ range sort (last 6 (where .Site.Pages "Type" "boardmember")) "Weight" }}
+						{{ if .Params.First_name }}
+					    	{{ .Render "li"}}
+						{{ end }}
+            		{{ end }}
 				</section>
 			</div>
 			<p class="txt-center action-p">Request full contact info & HOA Directory: <a href="/contact/">Here</a></p>
-			{{end}}
+{{end}}

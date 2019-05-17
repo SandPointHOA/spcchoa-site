@@ -6,3 +6,4 @@ paginate = "3"
 disableKinds = ["RSS"]
 [taxonomies]
   tag = "tags"
+  member = "members"

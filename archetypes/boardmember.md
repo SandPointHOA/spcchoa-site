@@ -1,6 +1,8 @@
 ---
-first_name:
-last_name:
-office_title:
+title: "{{ replace .Name "-" " " | title }}"
+first_name: ""
+last_name: ""
+order: 
 image:
+member: []
 ---
