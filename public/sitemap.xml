@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//localhost:1313/boardmember/president/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/vicepresident/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/treasurer/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/secretary/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/building/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/security/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/parks/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/sewer/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/roads/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/property/</loc>
+  </url>
+  
+  <url>
     <loc>//localhost:1313/news/spcc-minutes-4-17-19/</loc>
     <lastmod>2019-04-19T16:49:09-07:00</lastmod>
   </url>
@@ -30,6 +70,11 @@
   <url>
     <loc>//localhost:1313/news/informative-article-title/</loc>
     <lastmod>2019-03-28T12:08:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/boardmember/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -61,6 +106,12 @@
   </url>
   
   <url>
+    <loc>//localhost:1313/tags/hoa/</loc>
+    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//localhost:1313/landscape/</loc>
   </url>
   
@@ -70,6 +121,11 @@
   
   <url>
     <loc>//localhost:1313/maintenance/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/members/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
