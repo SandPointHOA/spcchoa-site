@@ -2,6 +2,10 @@ body, html {
   margin: 0;
 }
 
+.picture {
+  border-radius: 50%;
+}
+
 /* Fonts */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Domine', Georgia, Times, serif;

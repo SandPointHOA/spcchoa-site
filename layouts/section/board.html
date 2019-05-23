@@ -2,16 +2,20 @@
 		<h1 class="txt-center">Sand Point Maintenance Commission Board of Trustees</h1>
 			<div class="row">
 				<section class="column">
-					{{ range sort (first 5 (where .Site.Pages "Type" "boardmember")) "Weight" }}
-					    {{ .Render "li"}}
-            		{{ end }}
+					{{ $members := (where .Site.Pages "Section" "==" "boardmember") }}
+					{{ $memCount := len $members }}
+					{{ $half := div $memCount 2 }}
+					{{ range $i, $sequence :=  (seq $half) }}
+						{{ (index $members $i).Render "li" }}
+					{{ end }}
 				</section>
 				<section class="column">
-					{{ range sort (last 6 (where .Site.Pages "Type" "boardmember")) "Weight" }}
-						{{ if .Params.First_name }}
-					    	{{ .Render "li"}}
+					{{ range $i, $sequence :=  (seq $half) }}
+						{{ $curMember := index $members (add $i $half) }}
+						{{ if isset $curMember.Params "first_name"  }}
+							{{ ($curMember).Render "li" }}
 						{{ end }}
-            		{{ end }}
+					{{ end }}
 				</section>
 			</div>
 			<p class="txt-center action-p">Request full contact info & HOA Directory: <a href="/contact/">Here</a></p>
