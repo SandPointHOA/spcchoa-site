@@ -41,6 +41,6 @@ collections:
       label: "Construction Rules"
       name: "construction"
       fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Heading, name: heading, widget: string}
-        - {label: Sections, name: sections, widget: list, fields: [{label: "Section Heading", name: secHeader, widget: string}, {label: Text, name: secBody, widget: markdown}]}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Heading", name: "heading", widget: "string"}
+        - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader", widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]}
