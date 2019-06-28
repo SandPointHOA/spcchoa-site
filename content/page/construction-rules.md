@@ -140,10 +140,11 @@ sections:
       Commission.
 
 
-      1. For projects where the existing house is demolished and new
-      construction takes place, the fee is $1500.00.
+      For projects where the existing house is demolished and new construction
+      takes place, the fee is $1500.00.
 
-      2. For projects where the existing structure is modified by adding new
+
+      1. For projects where the existing structure is modified by adding new
       exterior walls and/or changing the existing roofline, the fee is $750.00.
     secHeader: Construction Project Fee
   - secBody: >-
