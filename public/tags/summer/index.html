@@ -13,6 +13,7 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
  		<script type='application/ld+json'> 
 			{
 			  "@context": "http://www.schema.org",
@@ -50,7 +51,21 @@
 						    <a href="/location">Location</a>
 						</div>
 					</div>
-					<li><a href="/SandPoint_CCRRs.pdf">Rules & Regulations</a></li>
+					<div class="dropdown">
+						<input class="menu-btn" type="checkbox" id="regs-btn" autocomplete="off" hidden/>
+						<label class="menu-label" for="regs-btn">
+							<li class="dropbtn">
+								<span>Rules & Regulations <span>&#9660;</span></span>
+							</li>
+						</label>
+						<div class="dropdown-content" id="regs-content">
+						    <a href="/construction">Construction</a>
+						    <a href="/landscape">Landscape</a>
+						
+						    <a href="/security">Security</a>
+						    <a href="/solar">Solar Panels</a>
+						</div>
+					</div>
 					<li><a href="/news">News</a></li>
 					<li><a href="/forms">Forms</a></li>
 					<li><a href="/calendar">Calendar</a></li>
@@ -66,7 +81,7 @@
 				<ul>
 					
 					
-						<div class="card">
+						<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/welcome-event-title/"><h2>Welcome Event Title</h2></a>
 		<h3>Tue, Apr 2, 2019</h3>
@@ -76,7 +91,10 @@
 	
 	
 		<p class="summary">Ingens vomere! *Hinc ibi*; opem quod fieri incidere et *gelidas putabat*; arma
-soror trium et decursa Peneos; inermi. Flavam et isto Capitol...</p>
+soror trium et decursa Peneos; inermi. Flavam et isto Capitolia studiosus et
+sorores convicia utendum, aquas quid venatu, taurus concedimus. Se nequiret
+facit.
+Rate celer nescio et superbos rerum: poma a artes? Solio faxo...</p>
 	
 	<a href="//localhost:1313/news/welcome-event-title/">Read More >></a>
 </div>
@@ -102,5 +120,16 @@ soror trium et decursa Peneos; inermi. Flavam et isto Capitol...</p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

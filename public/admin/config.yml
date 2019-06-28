@@ -7,7 +7,7 @@ public_folder: "/images/"
 
 collections:
 - name: "news" # Used in routes, e.g., /admin/collections/blog
-  label: "Article" # Used in the UI
+  label: "Articles" # Used in the UI
   editor:
     preview: false
   folder: "/content/news" # The path to the folder where the documents are stored
@@ -20,9 +20,8 @@ collections:
     - {label: "Categories (all lowercase, separate with a comma)", name: "tags", required: false, widget: "list"}
     - {label: "Featured Image", name: "featuredImage", required: false, widget: "image"}
     - {label: "Body", name: "body", widget: "markdown"}
-
 - name: "boardmember" # Used in routes, e.g., /admin/collections/blog
-  label: "Board Member" # Used in the UI
+  label: "Board Members" # Used in the UI
   editor:
     preview: false
   folder: "/content/boardmember" # The path to the folder where the documents are stored
@@ -35,3 +34,13 @@ collections:
     - {label: "order on page", name: "weight", required: false, widget: "number"}
     - {label: "Profile Image", name: "image", required: false, widget: "image"}
     - {label: "Is Member?", name: "member", required: false, widget: "list"}
+- name: "pages"
+  label: "CCR&R Pages"
+  editor:
+    preview: false
+  folder: "/content/page" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Heading", name: "heading", widget: "string"}
+    - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader",required: false, widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]}

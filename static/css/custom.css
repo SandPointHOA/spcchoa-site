@@ -11,7 +11,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Domine', Georgia, Times, serif;
     line-height: 40px;
 }
-p, button, a, span  {
+
+p, ol {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+button, a, span  {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
@@ -194,13 +200,9 @@ span span {
   width: 100%;
 }
 
-#main > aside {
-  width: 40%;
-}
-
 .card.sec-nav {
   padding: 10px;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .sec-nav > h3 {
@@ -234,7 +236,9 @@ p {
 aside > .categories {
   padding: 2px 10px 10px 10px;
   margin-top: 80px;
+  margin-right: 80px;
   padding: 0 0 20px 20px;
+  min-width: 200px;
 }
 
 aside > .categories > h3 {
@@ -316,13 +320,6 @@ aside li {
   margin: auto;
   margin-bottom: 25px;
   padding: 25px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-font-smoothing: antialiased !important;
-  text-rendering: optimizelegibility !important;
-  font-size: 16px;
-  letter-spacing: .03em;
-  line-height: 1.75em;
 }
 
 .readable h1 {
@@ -331,10 +328,13 @@ aside li {
   margin-bottom: 30px;
 }
 
-.readable li, .readable p, .summary {
-  font-size: 16px;
+.readable li {
+  margin-bottom: 10px;
+}
+
+.readable li, .readable p, .readable {
+  font-size: 18px;
   letter-spacing: .03em;
-  line-height: 1.75em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
@@ -363,7 +363,6 @@ aside li {
   width: 90%;
   margin: auto; 
   margin-bottom: 25px;
-  max-width: 500px;
   overflow: hidden;
 }
 
@@ -374,18 +373,18 @@ aside li {
 
 .card > img {
   width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   display: block;
+}
+
+.summary {
+  margin-bottom: 25px;
 }
 
 .heading {
   padding: 15px;
   display: flex;
   justify-content: space-between;
-}
-
-.card p {
-    white-space: normal;
 }
 
 .card > a {

@@ -73,6 +73,22 @@
   </url>
   
   <url>
+    <loc>//localhost:1313/landscape-regs/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/regulations/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/security-regs/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/solar-rules/</loc>
+  </url>
+  
+  <url>
     <loc>//localhost:1313/boardmember/</loc>
     <priority>0</priority>
   </url>
@@ -83,6 +99,10 @@
   
   <url>
     <loc>//localhost:1313/construction/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/construction-rules/</loc>
   </url>
   
   <url>
@@ -147,7 +167,16 @@
   </url>
   
   <url>
+    <loc>//localhost:1313/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//localhost:1313/privacy/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/rules/</loc>
   </url>
   
   <url>

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card article-preview">
 	<div class="heading">
 		<a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
 		<h3>{{ .Date.Format "Mon, Jan 2, 2006" }}</h3>
@@ -6,8 +6,8 @@
 	{{ if .Params.FeaturedImage }}
 	<img{{ with .Params.FeaturedImage }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
 	{{ end }}
-	{{ if gt (len .Summary) 140 }}
-		<p class="summary">{{slicestr .Summary 0 140}}...</p>
+	{{ if gt (len .Summary) 300 }}
+		<p class="summary">{{slicestr .Summary 0 300}}...</p>
 	{{ else }}
 		<p>{{ .Summary }}</p>
 	{{ end }}

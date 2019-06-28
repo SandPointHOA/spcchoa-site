@@ -13,6 +13,7 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
  		<script type='application/ld+json'> 
 			{
 			  "@context": "http://www.schema.org",
@@ -50,7 +51,21 @@
 						    <a href="/location">Location</a>
 						</div>
 					</div>
-					<li><a href="/SandPoint_CCRRs.pdf">Rules & Regulations</a></li>
+					<div class="dropdown">
+						<input class="menu-btn" type="checkbox" id="regs-btn" autocomplete="off" hidden/>
+						<label class="menu-label" for="regs-btn">
+							<li class="dropbtn">
+								<span>Rules & Regulations <span>&#9660;</span></span>
+							</li>
+						</label>
+						<div class="dropdown-content" id="regs-content">
+						    <a href="/construction">Construction</a>
+						    <a href="/landscape">Landscape</a>
+						
+						    <a href="/security">Security</a>
+						    <a href="/solar">Solar Panels</a>
+						</div>
+					</div>
 					<li><a href="/news">News</a></li>
 					<li><a href="/forms">Forms</a></li>
 					<li><a href="/calendar">Calendar</a></li>
@@ -66,7 +81,7 @@
 				<ul>
 					
 					
-						<div class="card">
+						<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/test-post/"><h2>Test Post</h2></a>
 		<h3>Mon, Apr 1, 2019</h3>
@@ -77,13 +92,15 @@
 	
 		<p class="summary">## Mihi illuc postibus Learchum deique cui feri
 Lorem markdownum ab quod denique, parenti tectis peritura florent *vestigia
-canes Niobe* alm...</p>
+canes Niobe* alma inops modo, coniuge. Divino multi sed cum daulida simulacraque
+habuisse aut nunc herba, et versus monebat *atque requie*, invidiosa. Fuit
+animam et genitore p...</p>
 	
 	<a href="//localhost:1313/news/test-post/">Read More >></a>
 </div>
 
 					
-						<div class="card">
+						<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/another-post-title/"><h2>Another Post Title</h2></a>
 		<h3>Sun, Mar 31, 2019</h3>
@@ -94,13 +111,16 @@ canes Niobe* alm...</p>
 	
 		<p class="summary">## Et illis et cum desertum oscula Orithyian
 Ingens vomere! *Hinc ibi*; opem quod fieri incidere et *gelidas putabat*; arma
-soror trium et d...</p>
+soror trium et decursa Peneos; inermi. Flavam et isto Capitolia studiosus et
+sorores convicia utendum, aquas quid venatu, taurus concedimus. Se nequiret
+facit.
+&amp;gt; Qui caput; ...</p>
 	
 	<a href="//localhost:1313/news/another-post-title/">Read More >></a>
 </div>
 
 					
-						<div class="card">
+						<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/lorem-ipsum-dolor/"><h2>Lorem Ipsum Dolor</h2></a>
 		<h3>Sat, Mar 30, 2019</h3>
@@ -109,7 +129,7 @@ soror trium et d...</p>
 	<img src="/images/trees.jpg" alt="Lorem Ipsum Dolor">
 	
 	
-		<p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text eve...</p>
+		<p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but als...</p>
 	
 	<a href="//localhost:1313/news/lorem-ipsum-dolor/">Read More >></a>
 </div>
@@ -178,5 +198,16 @@ soror trium et d...</p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

@@ -13,6 +13,7 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
  		<script type='application/ld+json'> 
 			{
 			  "@context": "http://www.schema.org",
@@ -50,7 +51,21 @@
 						    <a href="/location">Location</a>
 						</div>
 					</div>
-					<li><a href="/SandPoint_CCRRs.pdf">Rules & Regulations</a></li>
+					<div class="dropdown">
+						<input class="menu-btn" type="checkbox" id="regs-btn" autocomplete="off" hidden/>
+						<label class="menu-label" for="regs-btn">
+							<li class="dropbtn">
+								<span>Rules & Regulations <span>&#9660;</span></span>
+							</li>
+						</label>
+						<div class="dropdown-content" id="regs-content">
+						    <a href="/construction">Construction</a>
+						    <a href="/landscape">Landscape</a>
+						
+						    <a href="/security">Security</a>
+						    <a href="/solar">Solar Panels</a>
+						</div>
+					</div>
 					<li><a href="/news">News</a></li>
 					<li><a href="/forms">Forms</a></li>
 					<li><a href="/calendar">Calendar</a></li>
@@ -62,21 +77,21 @@
         
 <div class="content">
 <div class="readable">
-			<h1>Security Procedures</h1>
-			<p>Please do the following if you or your property become the victim of any type of crime no matter how small:</p>
-			<ol>
-				<li>
-					<p>Call the police and report it.  You can call 911 and tell them it is a non-emergency call or call the North Precinct at (206) 625-5011.  The majority of crime statements can be taken over the phone and require no officer visit.</p>
-				</li>
-				<li>
-					<p>Contact First Security at (206) 762-4420 ask for operations and report as well.  First Security will notify the Property Manager or Security Head.  Security notices will be hand delivered by the security guard to each individual home providing detail discreetly and as soon as possible.</p>
-				</li>
-			</ol>
-			<P>It is very important to report any property that is stolen even if you left your car/home unlocked and you are reporting it for statistical or insurance purposes. Crime often occurs in “bunches” over a short period.  By spreading the word, others can take preventive measure, be more alert and perhaps additional incidents can be avoided.</P>
+	<h1>Security Procedures</h1>
+	<p>Please do the following if you or your property become the victim of any type of crime no matter how small:</p>
+	<ol>
+		<li>
+			<p>Call the police and report it.  You can call 911 and tell them it is a non-emergency call or call the North Precinct at (206) 625-5011.  The majority of crime statements can be taken over the phone and require no officer visit.</p>
+		</li>
+		<li>
+			<p>Contact First Security at (206) 762-4420 ask for operations and report as well.  First Security will notify the Property Manager or Security Head.  Security notices will be hand delivered by the security guard to each individual home providing detail discreetly and as soon as possible.</p>
+		</li>
+	</ol>
+	<P>It is very important to report any property that is stolen even if you left your car/home unlocked and you are reporting it for statistical or insurance purposes. Crime often occurs in “bunches” over a short period.  By spreading the word, others can take preventive measure, be more alert and perhaps additional incidents can be avoided.</P>
 
-			<H2>Solicitors</H2>
-			<p>If a solicitor comes to your home, please advise them that there are no solicitors  allowed in this neighborhood.  If they refuse to leave or you see them heading to another street within this community, please call 911.  Additionally, you may contact our on-site security officer @ 517-7962.</p>
-		</div>
+	<H2>Solicitors</H2>
+	<p>If a solicitor comes to your home, please advise them that there are no solicitors  allowed in this neighborhood.  If they refuse to leave or you see them heading to another street within this community, please call 911.  Additionally, you may contact our on-site security officer @ 517-7962.</p>
+</div>
 </div>
 		<footer>
 			<div class="contact">
@@ -92,5 +107,16 @@
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>
