@@ -1,4 +1,5 @@
 {{ if .secHeader }}
+	<a class="anchor" id="{{ .secHeader | urlize | lower }}"></a>
 	<h2>{{ .secHeader }}</h2>
 {{ end }}
 

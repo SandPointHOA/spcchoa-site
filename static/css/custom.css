@@ -19,6 +19,14 @@ a {
   color: black;
 }
 
+/* ensure anchors not covered by sticky header */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
 nav a, nav span {
   text-decoration: none;
   font-weight: bold;
@@ -182,8 +190,27 @@ span span {
   width: 60%; 
 }
 
+#main > section.sec-full-text {
+  width: 100%;
+}
+
 #main > aside {
   width: 40%;
+}
+
+.card.sec-nav {
+  padding: 10px;
+  max-width: 250px;
+}
+
+.sec-nav > h3 {
+  margin: 0;
+}
+
+.sec-nav > ul {
+  list-style: none;
+  margin-top: 5px;
+  padding: 0;
 }
 
 p {
@@ -262,7 +289,6 @@ aside > ul {
 
 aside li {
   margin-bottom: 15px;
-  font-size: 1.1em;
 }
 
 .tag-title {
@@ -290,7 +316,6 @@ aside li {
   margin: auto;
   margin-bottom: 25px;
   padding: 25px;
-  max-width: 800px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
