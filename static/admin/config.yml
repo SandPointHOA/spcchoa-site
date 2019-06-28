@@ -40,8 +40,8 @@ collections:
   label: "Pages"
   files:
   - file: "site/content/construction/_index.md"
-        label: "Construction Rules"
-        name: "construction"
-        fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
+    label: "Construction Rules"
+    name: "construction"
+    fields:
+    - {label: Title, name: title, widget: string}
+    - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
