@@ -137,7 +137,7 @@ sections:
       or altered roofline projects when the Application for Approval of
       Construction is submitted. The fee will be deposited to the SPMC Reserve
       Account. Checks should be payable to the Sand Point Maintenance
-      Commission.
+      Commission.\n\n
 
 
       1. For projects where the existing house is demolished and new
