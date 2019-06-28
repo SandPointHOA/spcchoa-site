@@ -43,4 +43,4 @@ collections:
   fields: # The fields for each document, usually in front matter
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Heading", name: "heading", widget: "string"}
-    - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader", widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]
+    - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader", widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]}
