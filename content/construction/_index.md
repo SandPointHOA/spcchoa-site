@@ -2,10 +2,10 @@
 title: "Construction Approval Process"
 heading: "Sand Point Maintenance Commission Construction Approval Process"
 sections:
-- title: "Temporary"
+- heading: "Temporary"
   body: "description description description"
-- title: "Temporary"
+- heading: "Temporary"
   body: "description description description"
-- title: "Temporary"
+- heading: "Temporary"
   body: "description description description"
 ---
