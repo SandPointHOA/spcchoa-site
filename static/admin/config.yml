@@ -37,7 +37,7 @@ collections:
     - {label: "Is Member?", name: "member", required: false, widget: "list"}
 
 - name: "pages"
-    label: "Pages"
+  label: "Pages"
     files:
       - file: "site/content/construction/_index.md"
         label: "Construction Rules"
