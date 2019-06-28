@@ -26,7 +26,7 @@ sections:
       If you are contemplating a construction project, please take a few minutes
       to familiarize yourself with the process outlined herein so that your
       project can go as smoothly as possible.
-    secHeader: temp
+    secHeader: ''
   - secBody: >-
       The SPMC Bylaws and CC&R’s provide that:
 
