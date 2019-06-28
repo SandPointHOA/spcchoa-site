@@ -199,9 +199,9 @@ sections:
       persons.
 
 
-      <a href="https://forms.gle/DGe6JvzB9jbdsyZM8" target="_blank">Notice of
-      Application for Project Approval Which Will Alter an Existing Roofline</a>
-      or <a href="/forms/APPROVAL_ALTERING_ROOFLINE_APPLICATION.pdf"
+      <a href="https://forms.gle/LtNPK8NHjcunm3wz7" target="_blank">Construction
+      Approval Application</a> or <a
+      href="/forms/APPLICATION_FOR_APPROVAL_OF_CONSTRUCTION.pdf"
       target="_blank">Download as a PDF</a>
     secHeader: Additional Construction Rules
 ---
