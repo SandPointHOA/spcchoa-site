@@ -197,6 +197,12 @@ sections:
       retain the authority, after installation of the feature, to require that
       illumination be modified to mitigate impacts on the other properties and
       persons.
+
+
+      <a href="https://forms.gle/DGe6JvzB9jbdsyZM8" target="_blank">Notice of
+      Application for Project Approval Which Will Alter an Existing Roofline</a>
+      or <a href="/forms/APPROVAL_ALTERING_ROOFLINE_APPLICATION.pdf"
+      target="_blank">Download as a PDF</a>
     secHeader: Additional Construction Rules
 ---
 
