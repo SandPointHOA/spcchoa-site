@@ -1,6 +1,4 @@
 {{ if .secHeader }}
 	<h2>{{ .secHeader }}</h2>
 {{ end }}
-<div>
-	{{ .secBody }}
-</div>
+{{ .secBody  | markdownify }}
