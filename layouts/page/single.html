@@ -1,0 +1,10 @@
+{{ define "main" }}
+		<div class="readable">
+			{{ if (isset .Params "heading") }}
+				<h1>{{ .Params.heading }}</h1>
+			{{ end }}
+			{{ range .Params.sections }}
+				{{ partial "textSection" . }}
+			{{ end }}
+		</div>
+{{ end }}

@@ -38,10 +38,11 @@ collections:
 
 - name: "pages"
     label: "Pages"
-    files:
-      - file: "site/content/construction/_index.md"
-        label: "Construction Rules"
-        name: "construction"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
+    editor:
+      preview: false
+    folder: "/content/page" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Heading", name: "heading", widget: "string"}
+      - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader", widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]
