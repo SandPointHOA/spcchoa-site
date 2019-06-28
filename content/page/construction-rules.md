@@ -185,9 +185,11 @@ sections:
       persons.
     secHeader: Additional Construction Rules
   - secBody: >-
-      Additions to the Construction Approval Process as approved by the Sand
-      Point Maintenance Commission October 19, 1999 and amended May 15, 2001,
-      March 15, 2012, May 19, 2016, and September 28, 2016:
+      A Construction Project Fee will be collected for any new construction or
+      altered roofline projects when the Application for Approval of
+      Construction is submitted. The fee will be deposited to the SPMC Reserve
+      Account. Checks should be payable to the Sand Point Maintenance
+      Commission.
 
 
       1. For projects where the existing house is demolished and new
