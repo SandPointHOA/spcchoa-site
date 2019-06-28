@@ -20,7 +20,6 @@ collections:
     - {label: "Categories (all lowercase, separate with a comma)", name: "tags", required: false, widget: "list"}
     - {label: "Featured Image", name: "featuredImage", required: false, widget: "image"}
     - {label: "Body", name: "body", widget: "markdown"}
-
 - name: "boardmember" # Used in routes, e.g., /admin/collections/blog
   label: "Board Member" # Used in the UI
   editor:
@@ -35,13 +34,12 @@ collections:
     - {label: "order on page", name: "weight", required: false, widget: "number"}
     - {label: "Profile Image", name: "image", required: false, widget: "image"}
     - {label: "Is Member?", name: "member", required: false, widget: "list"}
-
 - name: "pages"
   label: "Pages"
   files:
-  - file: "site/content/construction/_index.md"
-    label: "Construction Rules"
-    name: "construction"
-    fields:
-    - {label: Title, name: title, widget: string}
-    - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
+    - file: "site/content/construction/_index.md"
+      label: "Construction Rules"
+      name: "construction"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
