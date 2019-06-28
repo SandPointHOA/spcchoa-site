@@ -35,3 +35,13 @@ collections:
     - {label: "order on page", name: "weight", required: false, widget: "number"}
     - {label: "Profile Image", name: "image", required: false, widget: "image"}
     - {label: "Is Member?", name: "member", required: false, widget: "list"}
+
+- name: "pages"
+    label: "Pages"
+    files:
+      - file: "site/content/construction/_index.md"
+        label: "Construction Rules"
+        name: "construction"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
