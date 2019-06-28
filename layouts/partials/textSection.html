@@ -1,4 +1,16 @@
 {{ if .secHeader }}
 	<h2>{{ .secHeader }}</h2>
 {{ end }}
-{{ .secBody  | markdownify }}
+
+{{ $markdown := .secBody  | markdownify }}
+{{ $tag := substr $markdown 0 3 }}
+
+{{ $open := len (findRE "<p>" $markdown) }}
+{{ $close := len (findRE "</p>" $markdown) }}
+{{ $pCount := (sub $open $close) }}
+
+{{ if (eq $pCount 0) }}
+	{{ $markdown }}
+{{ else if not (eq $tag "<p>") }}
+	<p>{{ $markdown }}
+{{ end }}
