@@ -138,18 +138,6 @@ sections:
       March 15, 2012, May 19, 2016, and September 28, 2016:
 
 
-      1. For projects where the existing house is demolished and new
-      construction takes place, the fee is $1500.00.
-
-      2. For projects where the existing structure is modified by adding new
-      exterior walls and/or changing the existing roofline, the fee is $750.00.
-    secHeader: Construction Project Fee
-  - secBody: >-
-      Additions to the Construction Approval Process as approved by the Sand
-      Point Maintenance Commission October 19, 1999 and amended May 15, 2001,
-      March 15, 2012, May 19, 2016, and September 28, 2016:
-
-
       1. Construction is limited to the hours of 8:00 AM to 6:00 PM Monday thru
       Friday and 9:00 AM to 5:00 PM Saturday and Sunday.
 
@@ -196,5 +184,17 @@ sections:
       illumination be modified to mitigate impacts on the other properties and
       persons.
     secHeader: Additional Construction Rules
+  - secBody: >-
+      Additions to the Construction Approval Process as approved by the Sand
+      Point Maintenance Commission October 19, 1999 and amended May 15, 2001,
+      March 15, 2012, May 19, 2016, and September 28, 2016:
+
+
+      1. For projects where the existing house is demolished and new
+      construction takes place, the fee is $1500.00.
+
+      2. For projects where the existing structure is modified by adding new
+      exterior walls and/or changing the existing roofline, the fee is $750.00.
+    secHeader: Construction Project Fee
 ---
 
