@@ -140,6 +140,8 @@ sections:
       Commission.
 
 
+
+
       1. For projects where the existing house is demolished and new
       construction takes place, the fee is $1500.00.
 
