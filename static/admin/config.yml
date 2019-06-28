@@ -42,4 +42,5 @@ collections:
       name: "construction"
       fields:
         - {label: Title, name: title, widget: string}
-        - {label: Sections, name: sections, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: body, widget: markdown}]}
+        - {label: Heading, name: heading, widget: string}
+        - {label: Sections, name: sections, widget: list, fields: [{label: "Section Heading", name: secHeader, widget: string}, {label: Text, name: secBody, widget: markdown}]}
