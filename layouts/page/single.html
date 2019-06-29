@@ -1,6 +1,8 @@
 {{ define "main" }}
 	{{ $sections := .Params.sections }}
 	<div id="main">
+		{{ $secLen := len $sections }}
+		{{ if gt $secLen 1 }}
 		<aside>
 			<div class="card sec-nav">
 				<h3>Sections</h3>
@@ -13,6 +15,7 @@
 				</ul>
 			</div>
 		</aside>
+		{{ end }}
 		<section class="sec-full-text">
 			<div class="readable">
 				{{ if (isset .Params "heading") }}
