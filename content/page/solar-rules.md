@@ -1,7 +1,7 @@
 ---
-title: ""
-heading: ""
+title: Solar Guidelines
+heading: SPMC Solar Panel Guidelines
 sections:
-- title: "Temporary"
-  body: "description description description"
+  - secBody: "Subject to RCW 64.38.055, the following are general guidelines for the installation of Solar Panels:\r\r\n\nSolar Panel installation plans must be submitted to the SPMC Board for approval a minimum of 30 days prior to the next regularly scheduled Board meeting.  Submittal documents must include the name of the vendor performing the installation and the drawings/documents submitted to the City of Seattle for the permitting process.\n\nPanels may be installed on roofs with the following provisions:\n\na)\tPanels must follow the slope of the roof\r\n\nb)\tPanels may not be visible above the roof line\r\n\nc)\tThe top edge of the panels must be parallel to the roof ridge\r\n\nd)\tPanel frame, support brackets, wiring and piping may be required to be painted or otherwise finished to coordinate with the roofing material color\r\n\nGround mounted panels may be installed with the following provisions:\n\na)\tPanels and parts (e.g., frame, support brackets, wiring and piping)  must be entirely within the boundaries of the applicable setbacks\r\n\nb)\tPanels must be screened/shielded so as not to be visible to neighboring properties\n\n\rc)\tPanels or support structures may not be higher than the bottom edge of the home’s roof\r\n\nAs part of the plan review and approval process, the SPMC Board of Directors may impose other reasonable requirements in relationship to the placement and manner of the solar panels."
 ---
+
