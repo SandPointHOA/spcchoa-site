@@ -1,9 +1,9 @@
 ---
-title: "Treasurer"
-first_name: "John" 
-last_name: "Braughn"
+title: Treasurer
+first_name: Margaret
+last_name: Day
 weight: 3
-image:
 member:
   - true
 ---
+
