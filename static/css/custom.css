@@ -192,12 +192,12 @@ span span {
   color: #585858;
 }
 
-#main > section {
-  width: 60%; 
-}
-
 #main > section.sec-full-text {
   width: 100%;
+}
+
+.news-feed {
+  max-width: 60%;
 }
 
 .card.sec-nav {
@@ -356,6 +356,16 @@ aside li {
   float: right;
 }
 
+/* images within content */
+
+.content-image, .readable > img {
+  border: 1px solid  #003366;
+  border-radius: 4px;
+  padding: 2px;
+  margin: auto;
+  width: 90%;
+}
+
 /* Article Cards */
 
 .card {
@@ -463,6 +473,17 @@ aside li {
   left: 0; 
   width: 100%; 
   height: 100%;
+}
+
+.cal-side {
+  padding: 5px;
+  max-width: 25%;
+}
+
+.cal-side > img {
+  margin: auto;
+  margin-top: 10%;
+  display: block;
 }
 
 /* Footer */
@@ -678,6 +699,18 @@ form button {
       margin: 25px;
       width: 40px;
       height: 40px;
+    }
+
+    .cal-side {
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      order: 4;
+    }
+
+    .cal-section {
+      order: 2;
     }
 
     .nav-icon:after, 
