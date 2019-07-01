@@ -262,6 +262,7 @@ li ol {
 
 .posts {
   max-width: 550px;
+  margin-right: 25px;
 }
 
 .posts > a{
@@ -370,7 +371,6 @@ aside li {
 
 .card {
   background-color: white;
-  width: 90%;
   margin: auto; 
   margin-bottom: 25px;
   overflow: hidden;
@@ -417,6 +417,7 @@ aside li {
   font-size: 1em;
   color: #585858;
   margin-top: 2px;
+  margin-left: 2px;
 } 
 
 /* pagination */
@@ -664,6 +665,7 @@ form button {
 
      #main > section, #main > aside {
       width: 100%;
+      max-width: 2000px;
      }
     
      .content {
@@ -793,6 +795,10 @@ form button {
       width: 75%;
       margin: auto;
       margin-bottom: 20px;
+    }
+
+    .news-feed {
+      max-width: 100%;
     }
 }
 
