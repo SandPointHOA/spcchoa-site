@@ -1,5 +1,6 @@
 ---
 title: ""
+rules: true
 heading: ""
 sections:
 - title: "Temporary"

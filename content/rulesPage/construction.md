@@ -1,5 +1,5 @@
 ---
-title: Construction Approval Process
+title: Construction Process
 heading: Sand Point Maintenance Commission Construction Approval Process
 sections:
   - secBody: >-

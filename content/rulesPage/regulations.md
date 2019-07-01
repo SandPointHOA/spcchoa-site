@@ -1,5 +1,5 @@
 ---
-title: Rules and Regulations
+title: General Regulations
 heading: 'Regulations of The Sand Point Maintenance Commission '
 sections:
   - secBody: >-

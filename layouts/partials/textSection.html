@@ -11,7 +11,11 @@
 {{ $pCount := (sub $open $close) }}
 
 {{ if (eq $pCount 0) }}
-	{{ $markdown }}
+	{{ if and (eq $open 0) (eq $close 0) }}
+		<p>{{ $markdown }}</p>
+	{{ else }}
+		{{ $markdown }}
+	{{ end }}
 {{ else if not (eq $tag "<p>") }}
 	<p>{{ $markdown }}
 {{ end }}

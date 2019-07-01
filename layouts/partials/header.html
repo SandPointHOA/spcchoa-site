@@ -63,11 +63,10 @@
 							</li>
 						</label>
 						<div class="dropdown-content" id="regs-content">
-						    <a href="/construction">Construction</a>
-						    <a href="/landscape">Landscape</a>
-						
-						    <a href="/security">Security</a>
-						    <a href="/solar">Solar Panels</a>
+							{{ $rules := where .Site.Pages "Type" "rulesPage" }}
+							{{ range $rules }}
+								{{ if (isset .Params "heading") }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+							{{ end }}
 						</div>
 					</div>
 					<li><a href="/news">News</a></li>
