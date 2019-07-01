@@ -1,9 +1,9 @@
 ---
-title: "Sewer"
-first_name: "Kevin"
-last_name: "Sutherland"
+title: Sewer
+first_name: Charlie
+last_name: Laboda
 weight: 8
-image:
 member:
   - true
 ---
+

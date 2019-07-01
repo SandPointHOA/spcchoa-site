@@ -1,9 +1,9 @@
 ---
-title: "Parks"
-first_name: "Margaret"
-last_name: "Day"
+title: Parks
+first_name: Beth
+last_name: Isenhath
 weight: 7
-image:
 member:
   - true
 ---
+
