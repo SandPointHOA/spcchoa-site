@@ -1,9 +1,9 @@
 ---
-title: "Vice President"
-first_name: "Cory"
-last_name: "Benson"
+title: Vice President
+first_name: Howard
+last_name: Choder
 weight: 2
-image:
 member:
   - true
 ---
+
