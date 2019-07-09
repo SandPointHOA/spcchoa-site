@@ -4,6 +4,7 @@ date: 2019-07-09T20:19:08.783Z
 draft: true
 tags:
   - minutes
+  - hoa
 ---
 SPMC MINUTES  January 17, 2019
 
