@@ -1,3 +1,6 @@
+---
+title: "Terms & Conditions"
+---
 <h2>Welcome to Sand Point CC Hoa</h2>
 <p>These terms and conditions outline the rules and regulations for the use of Sand Point CC Hoa's Website.</p> <br /> 
 <p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use Sand Point CC Hoa's website 

@@ -4,5 +4,8 @@ title = "Sand Point CC Homeowner's Association"
 enableRobotsTXT = "true"
 paginate = "3"
 disableKinds = ["RSS"]
+[permalinks]
+  page = "/:filename/"
 [taxonomies]
   tag = "tags"
+  member = "members"

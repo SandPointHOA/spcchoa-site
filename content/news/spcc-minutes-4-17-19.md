@@ -4,7 +4,7 @@ date: '2019-04-19T16:49:09-07:00'
 draft: false
 tags:
   - minutes
-featuredImage: /images/account.svg
+  - hoa
 ---
 PARKS:
 

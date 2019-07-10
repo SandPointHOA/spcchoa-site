@@ -1,0 +1,21 @@
+{{ if .secHeader }}
+	<a class="anchor" id="{{ .secHeader | urlize | lower }}"></a>
+	<h2>{{ .secHeader }}</h2>
+{{ end }}
+
+{{ $markdown := .secBody  | markdownify }}
+{{ $tag := substr $markdown 0 3 }}
+
+{{ $open := len (findRE "<p>" $markdown) }}
+{{ $close := len (findRE "</p>" $markdown) }}
+{{ $pCount := (sub $open $close) }}
+
+{{ if (eq $pCount 0) }}
+	{{ if and (eq $open 0) (eq $close 0) }}
+		<p>{{ $markdown }}</p>
+	{{ else }}
+		{{ $markdown }}
+	{{ end }}
+{{ else if not (eq $tag "<p>") }}
+	<p>{{ $markdown }}
+{{ end }}

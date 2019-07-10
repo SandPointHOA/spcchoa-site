@@ -13,7 +13,8 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
- 		<script type='application/ld+json'> 
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 		<script type='application/ld+json'>
 			{
 			  "@context": "http://www.schema.org",
 			  "@type": "Organization",
@@ -60,7 +61,7 @@
 						<div class="dropdown-content" id="regs-content">
 						    <a href="/construction">Construction</a>
 						    <a href="/landscape">Landscape</a>
-						    <a href="/maintenance">Maintenance</a>
+
 						    <a href="/security">Security</a>
 						    <a href="/solar">Solar Panels</a>
 						</div>
@@ -73,7 +74,7 @@
 			</nav>
 			<div class="hero" alt="Aerial_Neighborhood"></div>
 		</header>
-        
+
 <div class="content">
 			<div class="readable">
 				<h1 class="post-title">Lorem Ipsum Dolor</h1>
@@ -81,11 +82,11 @@
 				<img src="/images/trees.jpg" alt="Lorem Ipsum Dolor">
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-				
+
 
   <h3 class="tag-title">Categories:</h3>
   <ul class="tags">
-    
+
       <li>
           <a href="//localhost:1313/tags/notice/">notice</a>
         </li></ul>
@@ -100,12 +101,23 @@
 				<p class="address">
 					1111-5555 Place Holder Address, Seattle WA
 				</p>
-			</div> 
+			</div>
 			<div class="legal">
 				<p><a href="/privacy">Privacy Policy</a></p>
 				<p><a href="/terms">Terms and Conditions</a></p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

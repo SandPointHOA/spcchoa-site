@@ -13,6 +13,7 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
  		<script type='application/ld+json'> 
 			{
 			  "@context": "http://www.schema.org",
@@ -60,7 +61,7 @@
 						<div class="dropdown-content" id="regs-content">
 						    <a href="/construction">Construction</a>
 						    <a href="/landscape">Landscape</a>
-						    <a href="/maintenance">Maintenance</a>
+						
 						    <a href="/security">Security</a>
 						    <a href="/solar">Solar Panels</a>
 						</div>
@@ -137,5 +138,16 @@
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

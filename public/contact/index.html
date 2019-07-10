@@ -13,7 +13,8 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
- 		<script type='application/ld+json'> 
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 		<script type='application/ld+json'>
 			{
 			  "@context": "http://www.schema.org",
 			  "@type": "Organization",
@@ -61,7 +62,7 @@
 						<div class="dropdown-content" id="regs-content">
 						    <a href="/construction">Construction</a>
 						    <a href="/landscape">Landscape</a>
-						    <a href="/maintenance">Maintenance</a>
+
 						    <a href="/security">Security</a>
 						    <a href="/solar">Solar Panels</a>
 						</div>
@@ -74,11 +75,11 @@
 			</nav>
 			<div class="hero" alt="Aerial_Neighborhood"></div>
 		</header>
-        
+
 <div class="content">
-<form accept-charset="UTF-8" name="contact" enctype="multipart/form-data" method="POST" data-netlify="true" action="/success" data-netlify-recaptcha="true">
+<form accept-charset="UTF-8" name="contact" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success">
 				<h2>Contact the HOA Board</h2>
-				<ul>	
+				<ul>
 					<li class="single-input">
 						<label for="name">Full Name:</label>
 						<input type="text" id="name" name="name" required>
@@ -104,15 +105,8 @@
 						  		<label><input type="radio" name="joinList" value="no">No</label>
 							</div>
 						</div>
-						<div>
-							<label for="getDirectory">Recieve The Member Contact Directory Password:</label>
-							<div class="radios">
-								<label><input type="radio" name="getDirectory" value="yes" required="required">Yes</label>
-						  		<label><input type="radio" name="getDirectory" value="no" checked="checked">No</label>
-							</div>
-						</div>
 					</li>
-					<li><div data-netlify-recaptcha="true"></div></li>
+					<div data-netlify-recaptcha="true"></div>
 					<li class="single-input">
 						<button type="submit">SUBMIT</button>
 					</li>
@@ -126,12 +120,23 @@
 				<p class="address">
 					1111-5555 Place Holder Address, Seattle WA
 				</p>
-			</div> 
+			</div>
 			<div class="legal">
 				<p><a href="/privacy">Privacy Policy</a></p>
 				<p><a href="/terms">Terms and Conditions</a></p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

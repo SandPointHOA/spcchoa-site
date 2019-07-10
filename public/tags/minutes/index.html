@@ -13,7 +13,8 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
- 		<script type='application/ld+json'> 
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 		<script type='application/ld+json'>
 			{
 			  "@context": "http://www.schema.org",
 			  "@type": "Organization",
@@ -60,7 +61,7 @@
 						<div class="dropdown-content" id="regs-content">
 						    <a href="/construction">Construction</a>
 						    <a href="/landscape">Landscape</a>
-						    <a href="/maintenance">Maintenance</a>
+
 						    <a href="/security">Security</a>
 						    <a href="/solar">Solar Panels</a>
 						</div>
@@ -73,31 +74,31 @@
 			</nav>
 			<div class="hero" alt="Aerial_Neighborhood"></div>
 		</header>
-        
+
 <div class="content">
 		<section>
 				<h2 class="txt-center">News in the "Minutes" Category</h2>
 				<ul>
-					
-					
-						<div class="card">
+
+
+						<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/spcc-minutes-4-17-19/"><h2>SPCC Minutes 4/17/19</h2></a>
 		<h3>Fri, Apr 19, 2019</h3>
 	</div>
-	
-	
-		<p>PARKS:
+
+
+		<p class="summary">PARKS:
 1) WTP: Had vendor come out and clean up fallen limbs. Major limbing necessary. SPCC will
 aerate turf 2nd week of April. JMS coming in with 40&#43; yards topsoil and seed
-2) ETP: Proposal will come...</p>
-	
+2) ETP: Proposal will come from SPCC to us. LRP / John Baughn currently considering a proposal to widen the road along ETP to ...</p>
+
 	<a href="//localhost:1313/news/spcc-minutes-4-17-19/">Read More >></a>
 </div>
 
-					
-					
-					
+
+
+
 
 				</ul>
 		</section>
@@ -109,12 +110,23 @@ aerate turf 2nd week of April. JMS coming in with 40&#43; yards topsoil and seed
 				<p class="address">
 					1111-5555 Place Holder Address, Seattle WA
 				</p>
-			</div> 
+			</div>
 			<div class="legal">
 				<p><a href="/privacy">Privacy Policy</a></p>
 				<p><a href="/terms">Terms and Conditions</a></p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

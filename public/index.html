@@ -14,7 +14,8 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
- 		<script type='application/ld+json'> 
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 		<script type='application/ld+json'>
 			{
 			  "@context": "http://www.schema.org",
 			  "@type": "Organization",
@@ -62,7 +63,7 @@
 						<div class="dropdown-content" id="regs-content">
 						    <a href="/construction">Construction</a>
 						    <a href="/landscape">Landscape</a>
-						    <a href="/maintenance">Maintenance</a>
+
 						    <a href="/security">Security</a>
 						    <a href="/solar">Solar Panels</a>
 						</div>
@@ -75,7 +76,7 @@
 			</nav>
 			<div class="hero" alt="Aerial_Neighborhood"></div>
 		</header>
-        
+
 <div class="content">
 			<div class="below-fold">
 				<div class="intro">
@@ -86,62 +87,83 @@
 					<section>
 						<h2>Recent News</h2>
 						<div class="posts">
-							
-            					<div class="card">
+
+            					<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/spcc-minutes-4-17-19/"><h2>SPCC Minutes 4/17/19</h2></a>
 		<h3>Fri, Apr 19, 2019</h3>
 	</div>
-	
-	
+
+
 		<p class="summary">PARKS:
 1) WTP: Had vendor come out and clean up fallen limbs. Major limbing necessary. SPCC will
-aerate turf 2nd week of April. JMS coming i...</p>
-	
+aerate turf 2nd week of April. JMS coming in with 40&#43; yards topsoil and seed
+2) ETP: Proposal will come from SPCC to us. LRP / John Baughn currently considering a proposal to widen the road along ETP to ...</p>
+
 	<a href="//localhost:1313/news/spcc-minutes-4-17-19/">Read More >></a>
 </div>
 
-            				
+
+            					<div class="card article-preview">
+	<div class="heading">
+		<a href="//localhost:1313/news/spcc-minutes-4-17-19/"><h2>SPCC Minutes 4/17/19</h2></a>
+		<h3>Fri, Apr 19, 2019</h3>
+	</div>
+
+
+		<p class="summary">PARKS:
+1) WTP: Had vendor come out and clean up fallen limbs. Major limbing necessary. SPCC will
+aerate turf 2nd week of April. JMS coming i...</p>
+
+	<a href="//localhost:1313/news/spcc-minutes-4-17-19/">Read More >></a>
+</div>
+
+
             					<div class="card">
 	<div class="heading">
 		<a href="//localhost:1313/news/welcome-event-title/"><h2>Welcome Event Title</h2></a>
 		<h3>Tue, Apr 2, 2019</h3>
 	</div>
-	
+
 	<img src="/images/barbecue.jpg" alt="Welcome Event Title">
-	
-	
+
+
 		<p class="summary">Ingens vomere! *Hinc ibi*; opem quod fieri incidere et *gelidas putabat*; arma
-soror trium et decursa Peneos; inermi. Flavam et isto Capitol...</p>
-	
+soror trium et decursa Peneos; inermi. Flavam et isto Capitolia studiosus et
+sorores convicia utendum, aquas quid venatu, taurus concedimus. Se nequiret
+facit.
+Rate celer nescio et superbos rerum: poma a artes? Solio faxo...</p>
+
 	<a href="//localhost:1313/news/welcome-event-title/">Read More >></a>
 </div>
 
-            				
-            					<div class="card">
+
+            					<div class="card article-preview">
 	<div class="heading">
 		<a href="//localhost:1313/news/test-post/"><h2>Test Post</h2></a>
 		<h3>Mon, Apr 1, 2019</h3>
 	</div>
-	
+
 	<img src="/images/houses.jpg" alt="Test Post">
-	
-	
+
+
 		<p class="summary">## Mihi illuc postibus Learchum deique cui feri
 Lorem markdownum ab quod denique, parenti tectis peritura florent *vestigia
-canes Niobe* alm...</p>
-	
+canes Niobe* alma inops modo, coniuge. Divino multi sed cum daulida simulacraque
+habuisse aut nunc herba, et versus monebat *atque requie*, invidiosa. Fuit
+animam et genitore p...</p>
+
 	<a href="//localhost:1313/news/test-post/">Read More >></a>
 </div>
 
-            				
+
             				<a href="/news" class="news-link">All News >></a>
 						</div>
 					</section>
 					<aside>
 						<h2>New to the site?</h2>
 						<ul>
-							<li><a href="contact.html">Join the Association's E-mail List</a></li>
+							<li><a href="/contact">Join the Association's E-mail List</a></li>
 							<li><a href="https://www.nextdoor.com" target="_blank" >Join our Nextdoor group</a></li>
 							<li><a href="https://www.seattle.gov/light/streetlight/sl_handler.asp" target="_blank">Report a street light outtage</a></li>
 						</ul>
@@ -160,12 +182,23 @@ canes Niobe* alm...</p>
 				<p class="address">
 					1111-5555 Place Holder Address, Seattle WA
 				</p>
-			</div> 
+			</div>
 			<div class="legal">
 				<p><a href="/privacy">Privacy Policy</a></p>
 				<p><a href="/terms">Terms and Conditions</a></p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>

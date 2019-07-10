@@ -13,7 +13,8 @@
 		<link href="/css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
  		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
- 		<script type='application/ld+json'> 
+ 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 		<script type='application/ld+json'>
 			{
 			  "@context": "http://www.schema.org",
 			  "@type": "Organization",
@@ -60,7 +61,7 @@
 						<div class="dropdown-content" id="regs-content">
 						    <a href="/construction">Construction</a>
 						    <a href="/landscape">Landscape</a>
-						    <a href="/maintenance">Maintenance</a>
+
 						    <a href="/security">Security</a>
 						    <a href="/solar">Solar Panels</a>
 						</div>
@@ -73,7 +74,7 @@
 			</nav>
 			<div class="hero" alt="Aerial_Neighborhood"></div>
 		</header>
-        
+
 <div class="content">
 			<div class="readable">
 				<h1 class="post-title">SPCC Minutes 4/17/19</h1>
@@ -89,13 +90,16 @@
 
 <p>At this time, there are no plans for</p>
 
-				
+
 
   <h3 class="tag-title">Categories:</h3>
   <ul class="tags">
-    
+
       <li>
           <a href="//localhost:1313/tags/minutes/">minutes</a>
+        </li>
+      <li>
+          <a href="//localhost:1313/tags/hoa/">hoa</a>
         </li></ul>
 
 
@@ -108,12 +112,23 @@
 				<p class="address">
 					1111-5555 Place Holder Address, Seattle WA
 				</p>
-			</div> 
+			</div>
 			<div class="legal">
 				<p><a href="/privacy">Privacy Policy</a></p>
 				<p><a href="/terms">Terms and Conditions</a></p>
 				<p class="copy">	&copy; 2019 SandPoint Country Club Homeowner's Association</p>
 			</div>
 		</footer>
+		<script>
+			  if (window.netlifyIdentity) {
+			    window.netlifyIdentity.on("init", user => {
+			      if (!user) {
+			        window.netlifyIdentity.on("login", () => {
+			          document.location.href = "/admin/";
+			        });
+			      }
+			    });
+			  }
+		</script>
 	<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>
