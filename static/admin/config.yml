@@ -44,8 +44,8 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader",required: false, widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]}
-- label: "Manual PDF"
-  name: "manual_pdf"
+- name: "manual_pdf"
+  label: "Manual PDF"
   widget: "file"
   default: "/uploads/general-manual.pdf"
   media_library:
