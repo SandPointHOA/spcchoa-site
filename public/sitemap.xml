@@ -1,224 +1,172 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+  
   <url>
     <loc>//localhost:1313/boardmember/president/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/vicepresident/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/treasurer/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/secretary/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/building/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/security/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/parks/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/sewer/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/roads/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/property/</loc>
   </url>
-
+  
+  <url>
+    <loc>//localhost:1313/news/spcc-minutes-1-17-19/</loc>
+    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/news/spmc-minutes-may-2019/</loc>
+    <lastmod>2019-05-16T19:00:00+00:00</lastmod>
+  </url>
+  
   <url>
     <loc>//localhost:1313/news/spcc-minutes-4-17-19/</loc>
     <lastmod>2019-04-19T16:49:09-07:00</lastmod>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/news/welcome-event-title/</loc>
-    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
+    <loc>//localhost:1313/news/spmc-annual-meeting-minutes-2019/</loc>
+    <lastmod>2019-03-10T23:05:51+00:00</lastmod>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/news/test-post/</loc>
-    <lastmod>2019-04-01T12:25:31-07:00</lastmod>
+    <loc>//localhost:1313/tags/annual/</loc>
+    <lastmod>2019-03-10T23:05:51+00:00</lastmod>
+    <priority>0</priority>
   </url>
-
-  <url>
-    <loc>//localhost:1313/news/another-post-title/</loc>
-    <lastmod>2019-03-31T12:26:22-07:00</lastmod>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/news/lorem-ipsum-dolor/</loc>
-    <lastmod>2019-03-30T13:36:02-07:00</lastmod>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/news/informative-article-title/</loc>
-    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/landscape-regs/</loc>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/regulations/</loc>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/security-regs/</loc>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/solar-rules/</loc>
-  </url>
-
+  
   <url>
     <loc>//localhost:1313/boardmember/</loc>
     <priority>0</priority>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/calendar/</loc>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/construction/</loc>
+    <loc>//localhost:1313/rulespage/construction/</loc>
   </url>
-
-  <url>
-    <loc>//localhost:1313/construction-rules/</loc>
-  </url>
-
+  
   <url>
     <loc>//localhost:1313/contact/</loc>
   </url>
-
-  <url>
-    <loc>//localhost:1313/tags/crime/</loc>
-    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/tags/events/</loc>
-    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-
+  
   <url>
     <loc>//localhost:1313/forms/</loc>
   </url>
-
+  
+  <url>
+    <loc>//localhost:1313/rulespage/regulations/</loc>
+  </url>
+  
   <url>
     <loc>//localhost:1313/tags/hoa/</loc>
-    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
+    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
     <priority>0</priority>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/landscape/</loc>
+    <loc>//localhost:1313/rulespage/landscape/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/location/</loc>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/maintenance/</loc>
+    <loc>//localhost:1313/directory/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/members/</loc>
     <priority>0</priority>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/tags/minutes/</loc>
-    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
+    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
     <priority>0</priority>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/news/</loc>
-    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
+    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
     <priority>0</priority>
   </url>
-
-  <url>
-    <loc>//localhost:1313/security/</loc>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/page/</loc>
-    <priority>0</priority>
-  </url>
-
+  
   <url>
     <loc>//localhost:1313/privacy/</loc>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/rules/</loc>
+    <loc>//localhost:1313/rulespage/</loc>
+    <priority>0</priority>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2019-04-19T16:49:09-07:00</lastmod>
+    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
     <priority>0</priority>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/security/</loc>
+    <loc>//localhost:1313/rulespage/security/</loc>
   </url>
-
+  
   <url>
-    <loc>//localhost:1313/solar/</loc>
+    <loc>//localhost:1313/rulespage/solar/</loc>
   </url>
-
-  <url>
-    <loc>//localhost:1313/tags/sports/</loc>
-    <lastmod>2019-03-31T12:26:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-
-  <url>
-    <loc>//localhost:1313/tags/summer/</loc>
-    <lastmod>2019-04-02T09:00:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-
+  
   <url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2019-03-28T12:08:00-07:00</lastmod>
+    <lastmod>2019-03-10T23:05:51+00:00</lastmod>
     <priority>0</priority>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/terms/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/success/</loc>
   </url>
-
+  
   <url>
     <loc>//localhost:1313/board/</loc>
   </url>
-
+  
 </urlset>
