@@ -1,5 +1,5 @@
 ---
-title: SPCC Minutes 1/17/19
+title: SPMC Minutes 1/17/19
 date: 2019-07-09T20:19:08.783Z
 draft: false
 tags:
