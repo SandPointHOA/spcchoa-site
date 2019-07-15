@@ -16,7 +16,7 @@ collections:
   fields: # The fields for each document, usually in front matter
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", required: false, widget: "datetime"}
-    - {label: "Draft", name: "draft", required: false, widget: "boolean", default: true}
+    - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
     - {label: "Categories (all lowercase, separate with a comma)", name: "tags", required: false, widget: "list"}
     - {label: "Featured Image", name: "featuredImage", required: false, widget: "image"}
     - {label: "Body", name: "body", widget: "markdown"}
@@ -31,6 +31,7 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "First Name", name: "first_name", widget: "string"}
     - {label: "Last Name", name: "last_name", widget: "string"}
+    - {label: "E-Mail", name: "mail", widget: "string"}
     - {label: "order on page", name: "weight", required: false, widget: "number"}
     - {label: "Profile Image", name: "image", required: false, widget: "image"}
     - {label: "Is Member?", name: "member", required: false, widget: "list"}
@@ -38,7 +39,7 @@ collections:
   label: "CCR&R Pages"
   editor:
     preview: false
-  folder: "/content/page" # The path to the folder where the documents are stored
+  folder: "/content/rulesPage" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
     - {label: "Title", name: "title", widget: "string"}
