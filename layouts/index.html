@@ -10,6 +10,8 @@
 						<div class="posts">
 							{{ range first 3 (where .Pages "Type" "news") }}
             					{{ .Render "li"}}
+            				{{ else }}
+            				<p>There aren't any posts yet.</p>
             				{{ end }}
             				<a href="/news" class="news-link">All News >></a>
 						</div>

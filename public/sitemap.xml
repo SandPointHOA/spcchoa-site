@@ -43,22 +43,6 @@
   </url>
   
   <url>
-    <loc>//localhost:1313/news/spcc-minutes-1-17-19/</loc>
-    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/news/spmc-annual-meeting-minutes-2019/</loc>
-    <lastmod>2019-03-10T23:05:51+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/tags/annual/</loc>
-    <lastmod>2019-03-10T23:05:51+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//localhost:1313/boardmember/</loc>
     <priority>0</priority>
   </url>
@@ -88,12 +72,6 @@
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/hoa/</loc>
-    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//localhost:1313/rulespage/landscape/</loc>
   </url>
   
@@ -106,19 +84,11 @@
   </url>
   
   <url>
-    <loc>//localhost:1313/members/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/tags/minutes/</loc>
-    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//localhost:1313/news/</loc>
-    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/members/</loc>
     <priority>0</priority>
   </url>
   
@@ -133,7 +103,6 @@
   
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2019-07-09T20:19:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -147,7 +116,6 @@
   
   <url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2019-03-10T23:05:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   

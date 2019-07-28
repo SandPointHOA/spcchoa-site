@@ -6,6 +6,8 @@
 					{{ $paginator := .Paginate (where .Data.Pages "Type" "news") }}
 					{{ range $paginator.Pages }}
 						{{ .Render "li"}}
+					{{ else }}
+						<p>There aren't any posts yet.</p>
 					{{ end }}
 					<!-- Hugo's default pagination template. -->
 					{{ template "_internal/pagination.html" . }}
