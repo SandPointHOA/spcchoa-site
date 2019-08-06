@@ -1,3 +1,3 @@
 ---
-title: "Member Directory"
+title: "News List Page - Default"
 ---

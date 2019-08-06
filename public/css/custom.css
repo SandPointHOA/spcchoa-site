@@ -504,7 +504,7 @@ footer {
   text-align: right;
 }
 
-.legal a {
+.legal a, .contact > p > a {
   color: #ecf0f1;
   text-decoration: underline;
 }
@@ -556,6 +556,10 @@ footer {
 form, .link-list {
   max-width: 800px;
   margin: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 form {
