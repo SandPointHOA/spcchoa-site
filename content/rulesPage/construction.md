@@ -196,7 +196,7 @@ sections:
       difficult to evaluate in advance of actual construction, the Board shall
       retain the authority, after installation of the feature, to require that
       illumination be modified to mitigate impacts on the other properties and
-      residents.
+      persons.
 
 
       <a href="https://forms.gle/LtNPK8NHjcunm3wz7" target="_blank">Construction
