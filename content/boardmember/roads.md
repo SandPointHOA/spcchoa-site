@@ -1,8 +1,8 @@
 ---
 title: Roads
-first_name: Reggie
+first_name: Peggie
 last_name: Evans
-mail: "Peggievans@yahoo.com"
+mail: pcevans19@gmail.com
 weight: 9
 member:
   - true
