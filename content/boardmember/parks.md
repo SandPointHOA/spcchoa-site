@@ -1,10 +1,9 @@
 ---
 title: Parks
-first_name: Beth
-last_name: Isenhath
+first_name: Mike
+last_name: Whalley
+mail: mike@whalley.net
 weight: 7
-mail: "Isenhath1@hotmail.com"
 member:
   - true
 ---
-
