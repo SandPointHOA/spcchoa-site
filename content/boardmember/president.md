@@ -1,10 +1,10 @@
 ---
-title: "President"
-first_name: "Brent"
-last_name: "Jones"
-mail: "bjones@gsblaw.com"
+title: President
+first_name: Howard
+last_name: Choder
+mail: howard@taxman.com
 weight: 1
-image: 
+image: null
 member:
   - true
 ---
