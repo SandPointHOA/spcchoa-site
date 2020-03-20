@@ -1,10 +1,9 @@
 ---
 title: Vice President
-first_name: Howard
-last_name: Choder
-mail: "howard@taxman.com"
+first_name: Charlie
+last_name: Laboda
+mail: charlielaboda@comcast.net
 weight: 2
 member:
   - true
 ---
-
