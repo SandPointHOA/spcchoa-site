@@ -9,7 +9,7 @@ draft: false
 
 To all Residents:
 
-Effective Monday, 4/13/20 and until further notice, the Sand Point Maintenance Commission Board of Directors is closing our community to all non-resident pedestrians and cyclists due to Covid-19 combined with safety concerns due to the completion of the final phase of the golf course renovation. There will be a new modified sign to that effect posted at the gatehouse. The club will provide personnel at the gatehouse who will hand out flyers advising all outside pedestrians and cyclists attempting to come in from 7am - 4pm the neighborhood is temporarily closed. Our current security guards will adjust their hours to 4pm to 12 midnight during this closure and will also have flyers to hand out.
+Effective Monday, 4/13/20 and until further notice, the Sand Point Maintenance Commission Board of Directors is closing our community to all non-resident pedestrians and cyclists due to Covid-19 combined with safety concerns due to the completion of the final phase of the golf course renovation. There will be a new modified sign to that effect posted at the gatehouse. The club will provide personnel at the gatehouse who will hand out flyers advising all outside pedestrians and cyclists attempting to come in from 7am - 4pm the neighborhood is temporarily closed. 
 
 This final phase includes heavy construction vehicles moving between Lakemont and Fairway carrying loads of bunker sand and sod. The sole purpose of the outer loop being closed is to keep all of our residents safe. We will reopen the outer loop when the construction is complete.
 
