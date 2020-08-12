@@ -1,6 +1,6 @@
 ---
 title: Food Truck - Friday, August 14 - Mix Poke
-date: 2020-08-12T00:17:53.041Z
+date: 2020-08-12T00:33:57.502Z
 draft: false
 featuredImage: ""
 ---
