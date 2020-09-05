@@ -1,9 +1,11 @@
 ---
-title: UPDATED - Street Seal Coating Project - September 8 and 10, 11 and 12 -
+title: IMPORTANT - Street Seal Coating Project - September 8 and 10, 11 and 12 -
   Resident Preparation Required
 date: 2020-09-02T20:34:10.655Z
 draft: false
 ---
+Revised: 9/5/20 9:00 am
+
 Hi Neighbors,
 
 The street seal coating project is scheduled for September 10th through September 12th (weather dependent). In addition, we have scheduled a street sweeper to come in on Tuesday, September 8th, around 10 am. All streets will be swept on this day.
@@ -30,6 +32,6 @@ Affordable Asphalt crews will start each workday power brushing and blowing off 
 * Power Steering Marks – Seal coat is very tender during the first 30 days. As cars back out and the tire turns in place, the seal coat will scuff. These marks will mat back in over the next 30 days.
 * White Residue – When water comes in contact with freshly laid sealer, a white calcium residue sometimes forms. It has no lasting effects.
 
-Thank you for your cooperation!
+Please check the website during during the project for any additional updates.  Thank you for your cooperation!
 
 SPHOA Board
