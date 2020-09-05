@@ -32,6 +32,6 @@ Affordable Asphalt crews will start each workday power brushing and blowing off 
 * Power Steering Marks – Seal coat is very tender during the first 30 days. As cars back out and the tire turns in place, the seal coat will scuff. These marks will mat back in over the next 30 days.
 * White Residue – When water comes in contact with freshly laid sealer, a white calcium residue sometimes forms. It has no lasting effects.
 
-Please check the website during during the project for any additional updates.  Thank you for your cooperation!
+Please check the website during the project for any additional updates.  Thank you for your cooperation!
 
 SPHOA Board
