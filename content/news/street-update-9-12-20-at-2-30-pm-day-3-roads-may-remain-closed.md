@@ -1,8 +1,19 @@
 ---
-title: URGENT STREET UPDATE - 9/13/20 at 11:30 AM - Day 3 Roads STILL Remain Closed
+title: FINAL STREET UPDATE - 9/13/20 at 3:00 PM - Ridge & Fairway Open - Crown
+  Closed And Still Wet Spots
 date: 2020-09-12T21:19:29.358Z
 draft: false
 ---
+Hi Neighbors,
+
+Ridge and Fairway have been opened. Where there was a wet spot, we put a cone. You can cross Crown at the intersections of Crest, Ridge and Forest but the area in between the intersections is still wet and coned off. We will remove the remaining tape and cones at 6 pm.
+
+Again, thank you for your continued patience and cooperation.
+
+SPHOA Board
+
+\======================================================================
+
 Hi Neighbors,
 
 The weather has not cooperated with us. We are so close to the finish line, but there are still wet spots on each of the last three streets, requiring that we do not drive or walk on these streets. We will evaluate again at around 3 PM today.
