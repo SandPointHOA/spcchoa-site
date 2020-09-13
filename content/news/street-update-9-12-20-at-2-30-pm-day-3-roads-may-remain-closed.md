@@ -1,8 +1,20 @@
 ---
-title: STREET UPDATE - 9/12/20 at 6:30 PM - Day 3 Roads WILL Remain Closed
+title: URGENT STREET UPDATE - 9/13/20 at 7:30 AM - Day 3 Roads WILL Remain Closed
 date: 2020-09-12T21:19:29.358Z
 draft: false
 ---
+Hi Neighbors,
+
+All three streets worked on yesterday (Ridge, Crown, and Fairway) will remain closed with another evaluation at Noon. The seal coating has not dried sufficiently. Check here ([spcchoa.com](http://spcchoa.com/)) for updates.
+
+Thank you for your patience and cooperation.
+
+SPHOA Board
+
+\=====================================================================
+
+6:30 PM Posting
+
 Hi Neighbors,
 
 We can already determine that the streets done today will not be ready for cars tonight. If you are walking to your house please watch for areas that look wet and don't step in those. The cones/tape will be removed at 7am tomorrow.
