@@ -3,7 +3,7 @@ title: SPHOA Halloween Update
 date: 2020-10-21T20:39:22.518Z
 draft: false
 ---
-At our last board meeting on 10/15 we clarified a couple of items on Halloween and wanted to pass those along.
+At our last board meeting on Oct. 15 we clarified a couple of items on Halloween and wanted to pass those along.
 
 ·         We will be placing signs out front a week before explaining that we are discouraging trick or treating this year. 
 
