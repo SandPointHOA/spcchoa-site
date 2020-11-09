@@ -66,13 +66,19 @@
 							</li>
 						</label>
 						<div class="dropdown-content" id="regs-content">
-							{{ range $rules := where .Site.Pages "Type" "rulesPage" }}
-								{{ if (isset .Params "heading") }}<a href="/rulespage/{{ .File.TranslationBaseName }}">{{ .Title }}</a>{{ end }}
-							{{ end }}
+		
+								<a href="#">Construction Process</a>
+							
+								<a href="#">General Regulations</a>
+							
+								<a href="#">Landscape Features</a>
+							
+								<a href="#">Security Procedures</a>
+							
+								<a href="#">Solar Guidelines</a>
 						</div>
 					</div>
 					<li><a href="/news">News</a></li>
-					<li><a href="/forms">Forms</a></li>
 					<li><a href="/calendar">Calendar</a></li>
 					<li><a href="/contact">Contact</a></li>
 				</ul>
