@@ -1,10 +1,10 @@
 ---
-title: "Security"
-first_name: "Anita"
-last_name: "Hearl"
-mail: "ahearl@windermere.com"
+title: Security
+first_name: Joe
+last_name: Flick
+mail: joeflick@comcast.net
 weight: 6
-image:
+image: null
 member:
   - true
 ---
