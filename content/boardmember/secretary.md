@@ -1,10 +1,10 @@
 ---
-title: "Secretary"
-first_name: "Barbara"
-last_name: "Fruhling"
-mail: "Bee43@q.com"
+title: Secretary
+first_name: Barbara
+last_name: Fruhling
+mail: beesnews3@gmail.com
 weight: 4
-image:
+image: null
 member:
   - true
 ---
