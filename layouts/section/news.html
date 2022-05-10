@@ -1,7 +1,7 @@
 {{ define "main" }}
 		<div id="main">
 			<section class="news-feed">
-				<h2>SPCCHOA News</h2>
+				<h2>SPHOA News</h2>
 				<ul>
 					{{ $paginator := .Paginate (where .Data.Pages "Type" "news") }}
 					{{ range $paginator.Pages }}

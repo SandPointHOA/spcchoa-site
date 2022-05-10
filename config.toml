@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Sand Point CC Homeowner's Association"
+title = "Sand Point Homeowner's Association"
 enableRobotsTXT = "true"
 paginate = "3"
 disableKinds = ["RSS"]
