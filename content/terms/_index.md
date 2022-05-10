@@ -1,9 +1,9 @@
 ---
 title: "Terms & Conditions"
 ---
-<h2>Welcome to Sand Point CC Hoa</h2>
-<p>These terms and conditions outline the rules and regulations for the use of Sand Point CC Hoa's Website.</p> <br /> 
-<p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use Sand Point CC Hoa's website 
+<h2>Welcome to Sand Point Hoa</h2>
+<p>These terms and conditions outline the rules and regulations for the use of Sand Point Hoa's Website.</p> <br /> 
+<p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use Sand Point Hoa's website 
 if you do not accept all of the terms and conditions stated on this page.</p>
 <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice
 and any or all Agreements: “Client”, “You” and “Your” refers to you, the person accessing this website
@@ -15,13 +15,13 @@ of a fixed duration, or any other means, for the express purpose of meeting the 
 of provision of the Company’s stated services/products, in accordance with and subject to, prevailing law
 of . Any use of the above terminology or other words in the singular, plural,
 capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p><h2>Cookies</h2>
-<p>We employ the use of cookies. By using Sand Point CC Hoa's website you consent to the use of cookies 
-in accordance with Sand Point CC Hoa’s privacy policy.</p><p>Most of the modern day interactive web sites
+<p>We employ the use of cookies. By using Sand Point Hoa's website you consent to the use of cookies 
+in accordance with Sand Point Hoa’s privacy policy.</p><p>Most of the modern day interactive web sites
 use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site
 to enable the functionality of this area and ease of use for those people visiting. Some of our 
 affiliate / advertising partners may also use cookies.</p><h2>License</h2>
-<p>Unless otherwise stated, Sand Point CC Hoa and/or it’s licensors own the intellectual property rights for
-all material on Sand Point CC Hoa. All intellectual property rights are reserved. You may view and/or print
+<p>Unless otherwise stated, Sand Point Hoa and/or it’s licensors own the intellectual property rights for
+all material on Sand Point Hoa. All intellectual property rights are reserved. You may view and/or print
 pages from https://spcchoa.com for your own personal use subject to restrictions set in these terms and conditions.</p>
 <p>You must not:</p>
 <ol>
@@ -29,7 +29,7 @@ pages from https://spcchoa.com for your own personal use subject to restrictions
 <li>Sell, rent or sub-license material from https://spcchoa.com</li>
 <li>Reproduce, duplicate or copy material from https://spcchoa.com</li>
 </ol>
-<p>Redistribute content from Sand Point CC Hoa (unless content is specifically made for redistribution).</p>
+<p>Redistribute content from Sand Point Hoa (unless content is specifically made for redistribution).</p>
 <h2>Hyperlinking to our Content</h2>
 <ol>
 <li>The following organizations may link to our Web site without prior written approval:
@@ -90,7 +90,7 @@ and a list of the URL(s) on our site to which you would like to link. Allow 2-3 
 <li>By use of any other description of our Web site or material being linked to that makes sense within the
 context and format of content on the linking party's site.</li>
 </ol>
-<p>No use of Sand Point CC Hoa’s logo or other artwork will be allowed for linking absent a trademark license
+<p>No use of Sand Point Hoa’s logo or other artwork will be allowed for linking absent a trademark license
 agreement.</p>
 <h2>Iframes</h2>
 <p>Without prior approval and express written permission, you may not create frames around our Web pages or
