@@ -1,7 +1,7 @@
 ---
 title: Homeowner Vote Scheduled To Open Monday (4/27)
 date: 2020-04-24T16:02:41.469Z
-draft: false
+draft: true
 ---
 <!--StartFragment-->
 
