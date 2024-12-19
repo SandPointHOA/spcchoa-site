@@ -1,7 +1,7 @@
 ---
 title: Halloween 2020 In The Neighborhood
 date: 2020-10-01T21:47:30.491Z
-draft: false
+draft: true
 ---
 Greetings SPHOA Neighbors,
 
