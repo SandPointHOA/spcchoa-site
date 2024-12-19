@@ -1,7 +1,7 @@
 ---
 title: Scheduled Road Study - Thursday and Friday, August 12 and 13
 date: 2021-08-10T23:30:39.467Z
-draft: false
+draft: true
 ---
 Hi Neighbors,
 
