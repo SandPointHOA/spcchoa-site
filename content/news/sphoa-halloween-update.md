@@ -1,7 +1,7 @@
 ---
 title: SPHOA Halloween Update
 date: 2020-10-21T20:39:22.518Z
-draft: false
+draft: true
 ---
 At our last board meeting on Oct. 15 we clarified a couple of items on Halloween and wanted to pass those along.
 
