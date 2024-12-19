@@ -1,7 +1,7 @@
 ---
 title: Sand Point Grad Parade
 date: 2020-05-28T15:26:49.507Z
-draft: false
+draft: true
 ---
 <!--StartFragment-->
 
