@@ -1,5 +1,5 @@
 ---
-title: Parks
+title: Communication
 first_name: Jamie
 last_name: Ringstad
 mail: jamieringstad@outlook.com
