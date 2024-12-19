@@ -1,8 +1,8 @@
 ---
 title: Treasurer
-first_name: Kate
-last_name: Marks
-mail: kd_marks@msn.com
+first_name: AJ
+last_name: Kreshock
+mail: ajkreshock@gmail.com
 weight: 3
 member:
   - true
