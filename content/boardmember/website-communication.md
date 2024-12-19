@@ -1,5 +1,5 @@
 ---
-title: Website Communication
+title: Website
 first_name: Vamshi
 last_name: Reddy
 mail: vamshidhar.reddy@gmail.com
