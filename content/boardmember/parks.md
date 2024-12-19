@@ -1,8 +1,8 @@
 ---
 title: Parks
-first_name: Jacqueline
-last_name: McKillop
-mail: jacquelinebird@yahoo.com
+first_name: Jamie
+last_name: Ringstad
+mail: jamieringstad@outlook.com
 weight: 7
 member:
   - true
