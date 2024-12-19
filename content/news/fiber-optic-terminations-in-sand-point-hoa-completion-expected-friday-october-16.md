@@ -2,7 +2,7 @@
 title: Fiber Optic Terminations in Sand Point HOA - Completion expected Friday,
   October 16
 date: 2020-10-07T15:27:02.800Z
-draft: false
+draft: true
 ---
 Hi Neighbors,
 
