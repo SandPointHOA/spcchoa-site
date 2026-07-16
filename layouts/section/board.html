@@ -1,21 +1,10 @@
-{{define "main"}}	
+{{define "main"}}
 		<h1 class="txt-center">Sand Point Homeowner's Association Board of Directors</h1>
-			<div class="row">
-				<section class="column">
-					{{ $members := (where .Site.Pages "Section" "==" "boardmember") }}
-					{{ $memCount := len $members }}
-					{{ $half := div $memCount 2 }}
-					{{ range $i, $sequence :=  (seq $half) }}
-						{{ (index $members $i).Render "li" }}
-					{{ end }}
-				</section>
-				<section class="column">
-					{{ range $i, $sequence :=  (seq $half) }}
-						{{ $curMember := index $members (add $i $half) }}
-						{{ if isset $curMember.Params "first_name"  }}
-							{{ ($curMember).Render "li" }}
-						{{ end }}
-					{{ end }}
-				</section>
-			</div>
+		<div class="board-grid">
+			{{ range (where .Site.Pages "Section" "==" "boardmember") }}
+				{{ if isset .Params "first_name" }}
+					{{ .Render "li" }}
+				{{ end }}
+			{{ end }}
+		</div>
 {{end}}
