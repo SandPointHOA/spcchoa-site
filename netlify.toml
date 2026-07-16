@@ -1,20 +1,13 @@
 [build.environment]
-	HUGO_VERSION = "0.54.0"
+HUGO_VERSION = "0.54.0"
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
 
   [headers.values]
-  	 X-Frame-Options = "DENY"
-	 X-XSS-Protection = "1; mode=block"
-	 Referrer-Policy = "no-referrer"
-	 X-Content-Type-Options = "nosniff"
-	 Strict-Transport-Security = "max-age=31536000"
-	 
-[[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/contact"
-
-  [headers.values]
-	 Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
+   X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "no-referrer"
+X-Content-Type-Options = "nosniff"
+Strict-Transport-Security = "max-age=31536000"
