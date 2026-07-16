@@ -1,11 +1,17 @@
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Sand Point Homeowner's Association"
 enableRobotsTXT = "true"
-paginate = "3"
 disableKinds = ["RSS"]
-[permalinks]
-  page = "/:filename/"
+
+[pagination]
+  pagerSize = 3
+
 [taxonomies]
   tag = "tags"
   member = "members"
+
+# Render raw HTML in content (privacy/terms pages are authored as raw HTML).
+# Restores pre-Goldmark behavior after the Hugo upgrade.
+[markup.goldmark.renderer]
+  unsafe = true
