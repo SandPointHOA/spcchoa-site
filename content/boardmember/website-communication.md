@@ -1,9 +1,9 @@
 ---
-title: Website
-first_name: Vamshi
-last_name: Reddy
-mail: vamshidhar.reddy@gmail.com
+title: Communications
+first_name: Jamie
+last_name: Ringstad
+mail: jamieringstad@outlook.com
 weight: 11
 member:
-  - "true"
+  - true
 ---
