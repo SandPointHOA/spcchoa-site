@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div id="main">
+	<section class="sec-full-text">
+		<div class="readable">
+			<h1>Thank you — your report was sent to the HOA.</h1>
+			<p class="report-emergency"><strong>For an emergency or a crime in progress, always call 911 first.</strong> To reach the on-duty guard directly, call <strong>425-454-5011</strong>.</p>
+
+			<div id="spd-handoff" hidden>
+				<h2>Please help our city reduce this type of crime by filing this report — with our help.</h2>
+				<div id="verdict"></div>
+				<div id="packet-wrap" hidden>
+					<h3>Copy-and-paste packet for the Seattle Police report</h3>
+					<p>Open the SPD report, then paste each line into the matching field.</p>
+					<p><a id="spd-link" href="https://spdonlinereporting.seattle.gov/" target="_blank" rel="noopener">Open the Seattle Police online report &raquo;</a></p>
+					<p><button type="button" id="copy-all">Copy all</button> <span id="copy-all-status" role="status"></span></p>
+					<dl id="packet"></dl>
+					<h3>Or copy the whole packet as text</h3>
+					<textarea id="packet-text" readonly rows="10" style="width:100%"></textarea>
+				</div>
+			</div>
+
+			<p id="no-data" hidden>Your report was sent. If you also want to file it with the Seattle Police, you can start their report here: <a href="https://spdonlinereporting.seattle.gov/" target="_blank" rel="noopener">Seattle Police online reporting</a>.</p>
+
+			<p><a href="/">&laquo; Go home</a></p>
+		</div>
+	</section>
+</div>
+<script type="module" src="/js/incident-success.js"></script>
+{{ end }}
