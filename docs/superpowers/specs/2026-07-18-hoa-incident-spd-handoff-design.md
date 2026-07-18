@@ -77,7 +77,11 @@ auto-pause). Netlify continues to handle form capture, spam protection, and phot
      - ⚠️ *Call the police non-emergency line 206-625-5011* — the "Suspect / Vehicle
        Description" field is non-empty (possible known suspect → SPD wants follow-up), or the
        type isn't online-eligible (e.g. Residential Burglary, Suspicious Activity/Person).
-       When uncertain, route here — it is the safe default.
+       When uncertain, route here — it is the safe default. This verdict **also reminds the
+       resident of the on-duty guard-shack number, 425-454-5011**, so they can alert
+       neighborhood security directly.
+   - The **guard-shack number (425-454-5011)** is shown on every verdict as a standing
+     reminder (it already appears in the form's intro copy), alongside the 911 note.
      - 🚨 *Call 911* — surfaced whenever narrative/type suggests an in-progress or emergency
        situation; always show the 911 reminder prominently regardless.
    - **Report-type → SPD mapping** (HOA type → SPD online category):
