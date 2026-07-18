@@ -6,7 +6,7 @@
 			<p>Use this form to report a non-emergency security incident to the HOA and our security team. Please select the report type that best fits. If the incident could fall under more than one type, choose one and explain the details in the narrative.</p>
 			<p class="report-emergency"><strong>For an emergency or a crime in progress, always call 911 first.</strong> To reach the on-duty guard directly, call <strong>425-454-5011</strong>. For a police report, contact the Seattle Police North Precinct at <strong>206-625-5011</strong>.</p>
 
-			<form class="incident-form" accept-charset="UTF-8" name="security-incident" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+			<form class="incident-form" accept-charset="UTF-8" name="security-incident" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/incident-filed">
 				<ul>
 					<p class="hidden" style="display: none;">
 						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -94,4 +94,5 @@
 		</div>
 	</section>
 </div>
+<script type="module" src="/js/incident-form.js"></script>
 {{ end }}
