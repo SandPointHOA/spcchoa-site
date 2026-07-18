@@ -15,15 +15,22 @@ export async function handler(event) {
   } catch (e) {
     return { statusCode: 400, body: "bad payload" };
   }
+  if (typeof payload !== "object" || payload === null) {
+    return { statusCode: 400, body: "bad payload" };
+  }
   // Only mirror the security-incident form, not other site forms (e.g. contact).
   if (payload.form_name && payload.form_name !== "security-incident") {
     return { statusCode: 200, body: "ignored (other form)" };
   }
   const row = buildRow(payload);
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ secret, row }),
-  });
-  return { statusCode: res.ok ? 200 : 502, body: res.ok ? "ok" : "sheet append failed" };
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ secret, row }),
+    });
+    return { statusCode: res.ok ? 200 : 502, body: res.ok ? "ok" : "sheet append failed" };
+  } catch (e) {
+    return { statusCode: 502, body: "sheet append failed" };
+  }
 }
