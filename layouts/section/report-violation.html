@@ -1,0 +1,113 @@
+{{ define "main" }}
+<div id="main">
+	<section class="sec-full-text">
+		<div class="readable">
+			<h1>Submit a Report of Violation</h1>
+			<p>Use this form to let the Board know about a possible violation of the community's Rules &amp; Regulations or CC&amp;Rs. Reports are reviewed by the Board and handled under our governing documents (Bylaws Article XIII). Please describe only what you personally observed, and stick to the facts.</p>
+			<p class="report-emergency"><strong>This form is not for emergencies.</strong> For a crime in progress or any emergency, call 911. For a security incident (theft, prowler, vandalism), use the <a href="/security-incident">Security Incident Report</a>. For an urgent safety concern or dispute between neighbors, please contact the Board directly.</p>
+
+			<form class="incident-form" accept-charset="UTF-8" name="report-violation" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+				<ul>
+					<p class="hidden" style="display: none;">
+						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+					</p>
+					<li class="single-input">
+						<label for="name">Your Full Name:</label>
+						<input type="text" id="name" name="name" required>
+					</li>
+					<li class="single-input">
+						<label for="email">Your Email Address:</label>
+						<input type="email" id="email" name="email" required>
+					</li>
+					<li class="single-input">
+						<label for="phone">Your Phone Number:</label>
+						<input type="tel" id="phone" name="phone">
+					</li>
+					<li class="single-input">
+						<label for="location">Location / Address of the Violation:</label>
+						<input type="text" id="location" name="location" placeholder="e.g. 8000 block of Forest Dr NE, or a specific address" required>
+					</li>
+					<li class="single-input">
+						<label for="datetime">Date &amp; Time Observed:</label>
+						<input type="datetime-local" id="datetime" name="datetime">
+					</li>
+					<li class="single-input">
+						<label for="frequency">Is this ongoing or a one-time occurrence?</label>
+						<select id="frequency" name="frequency">
+							<option value="One-time">One-time</option>
+							<option value="Recurring / ongoing">Recurring / ongoing</option>
+							<option value="Not sure">Not sure</option>
+						</select>
+					</li>
+					<li class="single-input report-types">
+						<span class="field-label">Type of Violation:</span>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Speeding / Reckless Driving" required>
+							<span class="report-title">Speeding / Reckless Driving</span>
+							<span class="report-desc">Exceeding the neighborhood 15 mph limit, or unsafe driving on our streets.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Parking">
+							<span class="report-title">Parking</span>
+							<span class="report-desc">A vehicle on the street more than 24 hours, a commercial vehicle, or an RV/boat/trailer/camper parked in violation.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Dog Off-Leash / Pet Issue">
+							<span class="report-title">Dog Off-Leash / Pet Issue</span>
+							<span class="report-desc">A dog off-leash or uncontrolled, uncollected pet waste, or persistent pet noise.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Noise">
+							<span class="report-title">Noise</span>
+							<span class="report-desc">Loud or disturbing noise, or power tools/machinery outside allowed hours (weekdays 8am–6pm, weekends 9am–5pm).</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Property Maintenance / Landscaping">
+							<span class="report-title">Property Maintenance / Landscaping</span>
+							<span class="report-desc">Overgrown or unkempt yard, debris or trash, visible garbage cans, or a tree/hedge blocking views, signs, or a neighbor's property.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Unapproved Construction or Exterior Change">
+							<span class="report-title">Unapproved Construction or Exterior Change</span>
+							<span class="report-desc">A building, fence, wall, solar installation, or other structure built or altered without Board (ARC) approval.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Unauthorized Sign">
+							<span class="report-title">Unauthorized Sign</span>
+							<span class="report-desc">A sign posted in violation of the community's sign rules.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Golf Cart (Unlicensed Minor)">
+							<span class="report-title">Golf Cart</span>
+							<span class="report-desc">A golf cart driven on the streets by a minor without a valid driver's license.</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Short-Term Rental">
+							<span class="report-title">Short-Term Rental</span>
+							<span class="report-desc">A home advertised or used for short-term or visitor rental (a CC&amp;R violation).</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="violation_type" value="Other">
+							<span class="report-title">Other</span>
+							<span class="report-desc">Another possible violation of our Rules &amp; Regulations or CC&amp;Rs — please describe below.</span>
+						</label>
+					</li>
+					<li class="single-input">
+						<label for="narrative">Description of What You Observed:</label>
+						<textarea id="narrative" name="narrative" placeholder="Describe the violation in as much factual detail as you can." required></textarea>
+					</li>
+					<li class="single-input">
+						<label for="attachment">Attach a Photo (optional):</label>
+						<input type="file" id="attachment" name="attachment" accept="image/*">
+					</li>
+					<div data-netlify-recaptcha="true"></div>
+					<li class="single-input">
+						<button type="submit">SUBMIT REPORT</button>
+					</li>
+				</ul>
+			</form>
+			<p style="font-size:.88rem;color:#666;">Reports are shared with the Board only. Submitting a report does not guarantee a specific outcome; the Board follows the notice, hearing, and cure process in Bylaws Article XIII.</p>
+		</div>
+	</section>
+</div>
+{{ end }}
