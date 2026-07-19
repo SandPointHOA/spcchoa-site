@@ -15,10 +15,17 @@ function doPost(e) {
   if (!Array.isArray(body.row)) {
     return json_({ ok: false, error: "row missing" });
   }
-  var sheet = SpreadsheetApp
-    .openById(props.getProperty("SHEET_ID"))
-    .getSheetByName("Incidents");
-  sheet.appendRow(body.row);
+  try {
+    var sheet = SpreadsheetApp
+      .openById(props.getProperty("SHEET_ID"))
+      .getSheetByName("Incidents");
+    if (!sheet) {
+      return json_({ ok: false, error: "Incidents tab not found (check SHEET_ID / tab name)" });
+    }
+    sheet.appendRow(body.row);
+  } catch (err) {
+    return json_({ ok: false, error: "append failed: " + err });
+  }
   return json_({ ok: true });
 }
 

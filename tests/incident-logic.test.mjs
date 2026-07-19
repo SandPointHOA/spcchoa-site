@@ -18,6 +18,16 @@ test("non-eligible types are not online-fileable", () => {
   assert.equal(isOnlineEligible("Suspicious Activity or Person"), false);
 });
 
+test("auto-accessories and vandalism map to their distinct SPD categories", () => {
+  const accessories = computeVerdict({ report_type: "Theft of Auto Accessories", suspect: "" });
+  assert.equal(accessories.level, "online");
+  assert.equal(accessories.spdCategory, "Theft of Auto Accessories");
+
+  const vandalism = computeVerdict({ report_type: "Property Destruction / Vandalism", suspect: "" });
+  assert.equal(vandalism.level, "online");
+  assert.equal(vandalism.spdCategory, "Property Destruction");
+});
+
 test("eligible type with no suspect => online verdict", () => {
   const v = computeVerdict({ report_type: "Theft", suspect: "" });
   assert.equal(v.level, "online");
