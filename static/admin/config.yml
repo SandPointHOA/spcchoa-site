@@ -45,3 +45,21 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Sections", name: "sections", widget: "list", fields: [{label: "Heading", name: "secHeader",required: false, widget: "string"}, {label: "Text", name: "secBody", widget: "markdown"}]}
+- name: "forms" # Editable options for the HOA Request forms
+  label: "Request Forms"
+  editor:
+    preview: false
+  files:
+    - name: "violation-categories"
+      label: "Report of Violation — Categories"
+      file: "content/report-violation/_index.md"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - label: "Violation Categories"
+          name: "categories"
+          widget: "list"
+          label_singular: "Category"
+          summary: "{{fields.title}}"
+          fields:
+            - {label: "Category Name", name: "title", widget: "string"}
+            - {label: "Description", name: "description", widget: "text"}
