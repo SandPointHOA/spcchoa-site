@@ -13,14 +13,15 @@ export function isOnlineEligible(reportType) {
   return SPD_CATEGORY[reportType] != null;
 }
 
-// A filled Suspect/Vehicle field is our proxy for "known suspect" -> SPD wants follow-up,
-// so those are routed to the phone line. When uncertain, phone is the safe default.
+// Route purely on incident type: SPD-online-eligible categories get the online packet,
+// ineligible types (Residential Burglary, Suspicious Activity) go to the non-emergency line.
+// The Suspect/Vehicle free-text field is NOT used for routing -- describing a vehicle you
+// saw is not the same as a known suspect -- but it still appears in the packet.
 export function computeVerdict(submission) {
   const reportType = submission.report_type;
-  const hasSuspect = Boolean(submission.suspect && submission.suspect.trim().length > 0);
   const spdCategory = SPD_CATEGORY[reportType] ?? null;
-  const level = isOnlineEligible(reportType) && !hasSuspect ? "online" : "phone";
-  return { level, spdCategory, hasSuspect };
+  const level = isOnlineEligible(reportType) ? "online" : "phone";
+  return { level, spdCategory };
 }
 
 export function buildPacketFields(submission) {
