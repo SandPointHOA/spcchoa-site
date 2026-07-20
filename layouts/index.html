@@ -1,34 +1,104 @@
 {{ define "main" }}
-			<div class="below-fold">
-				<div class="intro">
-					<h1>Welcome to Sand Point HOA</h1>
-					<p>Attention Members, If you need to update or correct your information in the Directory please contact us at <a href="mailto:SPCCHOA@gmail.com?subject=Directory Update Request">SPCCHOA@gmail.com</a></p>
+<section class="hero">
+	<div class="hero-bg" style="background-image:url('/images/aerial-hero.jpg');"></div>
+	<div class="hero-scrim"></div>
+	<div class="wrap hero-inner">
+		<h1>Welcome to the Sand Point Country Club HOA</h1>
+		<p class="hero-lede">A gated community of 206 households around the Country Club — your home for news, events, governing documents, and quick ways to reach the board and our security team.</p>
+	</div>
+</section>
+
+<section class="band">
+	<div class="wrap">
+		<div class="sec-head">
+			<p class="kicker">Quick Actions</p>
+			<h2>How can we help today?</h2>
+		</div>
+		<div class="actions-grid">
+			<a href="/report-violation" class="action-card">
+				<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>
+				<h3>Report a Violation</h3>
+				<p>Speeding, parking, pets, noise, or another rule or CC&amp;R concern.</p>
+			</a>
+			<a href="/security-incident" class="action-card">
+				<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+				<h3>Security Incident Report</h3>
+				<p>Report suspicious activity, theft, or vandalism to the board and guards.</p>
+			</a>
+			<a href="https://drive.google.com/file/d/1sZDNLts909zGd3jkNlcE-6ga7eyGipzA/view" target="_blank" class="action-card">
+				<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg></span>
+				<h3>Streetlight Outage</h3>
+				<p>Report a dark or flickering streetlight in the neighborhood.</p>
+			</a>
+			<a href="/contact" class="action-card">
+				<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.2L4 18z"/></svg></span>
+				<h3>Contact the Board</h3>
+				<p>Questions, requests, or feedback for the board and property manager.</p>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="band band-tight">
+	<div class="wrap content-grid">
+		<div>
+			<div class="sec-head sec-head--split">
+				<div>
+					<p class="kicker">Neighborhood News</p>
+					<h2>Recent News</h2>
 				</div>
-				<div id="main">
-					<section>
-						<h2>Recent News</h2>
-						<div class="posts">
-							{{ range first 3 (where .Pages "Type" "news") }}
-            					{{ .Render "li"}}
-            				{{ else }}
-            				<p>There aren't any posts yet.</p>
-            				{{ end }}
-            				<a href="/news" class="news-link">All News >></a>
-						</div>
-					</section>
-					<aside>
-						<h2>New to the site?</h2>
-						<ul>
-							<li><a href="/contact">Join the Association's E-mail List</a></li>
-							<li><a href="https://www.nextdoor.com" target="_blank" >Join our Nextdoor group</a></li>
-							<li><a href="https://drive.google.com/file/d/1-vOc9cDves-SOnFyn4oxwpZgx5idW_lY/view" target="_blank">Report a street light outage</a></li>
-						</ul>
-						<img src="/images/sign-25.jpg" class="content-image" alt="street sign">
-						<h2>Upcoming Events</h2>
-						<div class="calendar-container">
-							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=spcchoa%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-   						</div>
-					</aside>
-				</div>
+				<a href="/news" class="more">All news &rarr;</a>
 			</div>
+			<div class="news-list">
+				{{ range first 3 (where .Site.RegularPages "Type" "news") }}
+				<a href="{{ .Permalink }}" class="news-card">
+					<div class="news-thumb" style="background-image:url('{{ with .Params.featuredImage }}{{ . }}{{ else }}/images/clubhouse-25.jpg{{ end }}');"></div>
+					<div class="news-body">
+						{{ with .Params.tags }}<span class="tag">{{ index . 0 }}</span>{{ end }}
+						<h3>{{ .Title }}</h3>
+						<p>{{ .Summary | plainify | truncate 130 }}</p>
+						<time>{{ .Date.Format "January 2, 2006" }}</time>
+					</div>
+				</a>
+				{{ else }}
+				<p>There aren't any posts yet.</p>
+				{{ end }}
+			</div>
+		</div>
+		<aside class="home-aside">
+			<div class="side-card">
+				<h3>Upcoming Events</h3>
+				<div class="calendar-container">
+					<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=spcchoa%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<a href="/calendar" class="more">Full calendar &rarr;</a>
+			</div>
+			<div class="side-card">
+				<h3>New to the neighborhood?</h3>
+				<ul class="side-links">
+					<li><a href="/contact">Join the HOA email list <span class="arw">&rarr;</span></a></li>
+					<li><a href="https://www.nextdoor.com" target="_blank">Join our Nextdoor group <span class="arw">&rarr;</span></a></li>
+					<li><a href="/directory">Member directory <span class="arw">&rarr;</span></a></li>
+					<li><a href="/board">Meet the board <span class="arw">&rarr;</span></a></li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+</section>
+
+<section class="band welcome">
+	<div class="wrap welcome-grid">
+		<img src="/images/clubhouse-25.jpg" alt="Sand Point clubhouse">
+		<div>
+			<p class="kicker">Sand Point Country Club Information</p>
+			<h2>An established community around the Sand Point Country Club</h2>
+			<p>Nestled in northeast Seattle with tree-lined streets, lake views, and privately maintained roads, our gated neighborhood pairs a real sense of community with the amenities of the club at its heart.</p>
+			<div class="chips">
+				<a class="chip" href="https://www.sandpointcc.com/web/pages/amenities" target="_blank" rel="noopener">&#9971; Amenities</a>
+				<a class="chip" href="https://www.sandpointcc.com/web/pages/membership" target="_blank" rel="noopener">&#128101; Membership</a>
+				<a class="chip" href="https://www.sandpointcc.com/web/pages/guest-info" target="_blank" rel="noopener">&#8505;&#65039; Guest Info</a>
+			</div>
+		</div>
+	</div>
+</section>
 {{ end }}

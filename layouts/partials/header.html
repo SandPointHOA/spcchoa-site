@@ -15,19 +15,17 @@
 		  <title>{{ .Title }} – {{ .Site.Title }}</title>
 		{{- end }}
 		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-		<link href="/css/custom.css" rel="stylesheet">
 		<link href="/css/normalize.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Domine:bold" rel="stylesheet" type="text/css">
- 		<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
- 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
- 		<script type='application/ld+json'> 
+		<link href="/css/custom.css" rel="stylesheet">
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<script type='application/ld+json'>
 			{
 			  "@context": "http://www.schema.org",
 			  "@type": "Organization",
 			  "name": "Sand Point Homeowners Association",
 			  "url": "https://spcchoa.com",
 			  "logo": "https://spcchoa.com/images/spcclogo.png",
-			  "image": "https://spcchoa.com/images/banner.jpg",
+			  "image": "https://spcchoa.com/images/aerial-hero.jpg",
 			  "description": "The Sand Point Homeowners Association digital portal. Wherein members can access news, download forms, and review regulations.",
 			  "geo": {
 			    "@type": "GeoCoordinates",
@@ -39,64 +37,49 @@
 	</head>
 
 	<body>
-		<header>
-			<nav>
-				<a href="/"><div class="circle"><img src="/images/spcclogo.png"></div></a>
+		<header class="site-head">
+			<div class="head-inner">
+				<a href="/" class="brand">
+					<span class="crest"><img src="/images/spcclogo.png" alt="Sand Point Country Club crest"></span>
+					<span class="brand-name">Sand Point HOA</span>
+				</a>
 				<input class="menu-btn" type="checkbox" id="menu-btn" autocomplete="off" hidden/>
-				<label class="menu-label nav-icon" for="menu-btn" hidden><div></div></label>
+				<label class="nav-icon" for="menu-btn"><div></div></label>
 				<ul class="menu">
 					<li><a href="/">Home</a></li>
-					<div class="dropdown">
-						<input class="menu-btn" type="checkbox" id="about-btn" autocomplete="off" hidden/>
-						<label class="menu-label" for="about-btn">
-							<li class="dropbtn">
-								<span>About <span>&#9660;</span></span>
-							</li>
-						</label>
+					<li class="dropdown">
+						<input class="submenu-btn" type="checkbox" id="about-btn" autocomplete="off" hidden/>
+						<label class="dropbtn" for="about-btn">About <span class="caret">&#9660;</span></label>
 						<div class="dropdown-content" id="about-content">
-						    <a href="/board">The Board</a>
-						    <a href="/directory">Member Directory</a>
-						    <a href="/location">Location</a>
+							<a href="/board">The Board</a>
+							<a href="/directory">Member Directory</a>
+							<a href="/location">Location</a>
 						</div>
-					</div>
-					<div class="dropdown">
-						<input class="menu-btn" type="checkbox" id="regs-btn" autocomplete="off" hidden/>
-						<label class="menu-label" for="regs-btn">
-							<li class="dropbtn">
-								<span>Rules & Regulations <span>&#9660;</span></span>
-							</li>
-						</label>
+					</li>
+					<li class="dropdown">
+						<input class="submenu-btn" type="checkbox" id="regs-btn" autocomplete="off" hidden/>
+						<label class="dropbtn" for="regs-btn">Rules &amp; Regulations <span class="caret">&#9660;</span></label>
 						<div class="dropdown-content" id="regs-content">
-								<!-- Links directly to drive PDF's  -->
-								<a href="https://drive.google.com/file/d/1hWFHpju8PKroJTzTnL6PlXZBVek19F40/view" target="_blank">Construction Process</a>
-
-								<a href="https://drive.google.com/file/d/1lY_JH6JQ4Bm2Au13USN6wenoNSCc1TrO/view" target="_blank">General Regulations</a>
-
-								<a href="https://drive.google.com/file/d/1hRjHzjM58emhHp05lRJhombl0BJ4vdAg/view" target="_blank">Landscape Features</a>
-
-								<a href="/security">Security Procedures</a>
-
-								<a href="https://drive.google.com/file/d/1O-PJg04VjSQqXoUvjDN0HL3b4QggEojf/view" target="_blank">Solar Guidelines</a>
+							<a href="https://drive.google.com/file/d/1hWFHpju8PKroJTzTnL6PlXZBVek19F40/view" target="_blank">Construction Process</a>
+							<a href="https://drive.google.com/file/d/1lY_JH6JQ4Bm2Au13USN6wenoNSCc1TrO/view" target="_blank">General Regulations</a>
+							<a href="https://drive.google.com/file/d/1hRjHzjM58emhHp05lRJhombl0BJ4vdAg/view" target="_blank">Landscape Features</a>
+							<a href="/security">Security Procedures</a>
+							<a href="https://drive.google.com/file/d/1O-PJg04VjSQqXoUvjDN0HL3b4QggEojf/view" target="_blank">Solar Guidelines</a>
 						</div>
-					</div>
+					</li>
 					<li><a href="https://drive.google.com/file/d/17hvynHr_7h16lv-KIJ0zZ6driSph19cN/view?usp=sharing" target="_blank">Bylaws</a></li>
-					<div class="dropdown">
-						<input class="menu-btn" type="checkbox" id="requests-btn" autocomplete="off" hidden/>
-						<label class="menu-label" for="requests-btn">
-							<li class="dropbtn">
-								<span>HOA Requests <span>&#9660;</span></span>
-							</li>
-						</label>
+					<li class="dropdown">
+						<input class="submenu-btn" type="checkbox" id="requests-btn" autocomplete="off" hidden/>
+						<label class="dropbtn" for="requests-btn">HOA Requests <span class="caret">&#9660;</span></label>
 						<div class="dropdown-content" id="requests-content">
-								<a href="/security-incident">Security Incident Report</a>
-								<a href="/report-violation">Submit Report of Violation</a>
-								<a href="https://drive.google.com/file/d/1sZDNLts909zGd3jkNlcE-6ga7eyGipzA/view" target="_blank">Streetlight Outage Report</a>
+							<a href="/security-incident">Security Incident Report</a>
+							<a href="/report-violation">Submit Report of Violation</a>
+							<a href="https://drive.google.com/file/d/1sZDNLts909zGd3jkNlcE-6ga7eyGipzA/view" target="_blank">Streetlight Outage Report</a>
 						</div>
-					</div>
+					</li>
 					<li><a href="/news">News</a></li>
 					<li><a href="/calendar">Calendar</a></li>
 					<li><a href="/contact">Contact</a></li>
 				</ul>
-			</nav>
-			<div class="hero" alt="Aerial_Neighborhood"></div>
+			</div>
 		</header>
