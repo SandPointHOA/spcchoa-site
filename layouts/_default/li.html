@@ -6,10 +6,6 @@
 	{{ if .Params.FeaturedImage }}
 	<img{{ with .Params.FeaturedImage }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
 	{{ end }}
-	{{ if gt (len .Summary) 300 }}
-		<p class="summary">{{slicestr .Summary 0 300}}...</p>
-	{{ else }}
-		<p>{{ .Summary }}</p>
-	{{ end }}
+	<p class="summary">{{ .Summary | plainify | truncate 300 }}</p>
 	<a href="{{ .Permalink }}">Read More >></a>
 </div>
