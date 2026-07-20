@@ -262,17 +262,11 @@ form button:hover { filter: brightness(1.04); }
 .incident-form .report-title { font-weight: 700; margin-left: 0.4rem; }
 .incident-form .report-desc { display: block; margin: 0.3rem 0 0 1.6rem; font-size: 0.9em; color: var(--muted); }
 
-/* Resident gate (login required for request forms) */
-.gate-content { display: none; }
-body.is-authed .gate-content { display: block; }
-.gate-locked { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
-  padding: 26px 24px; text-align: center; margin: 18px 0 4px; }
-body.is-authed .gate-locked { display: none; }
-.gate-locked p { margin: 0 0 16px; color: var(--muted); }
-.btn-login { display: inline-block; padding: 12px 28px; border: 0; border-radius: 999px;
-  background: var(--primary); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: .95rem;
-  cursor: pointer; box-shadow: 0 6px 18px rgba(18,122,134,.3); }
-.btn-login:hover { filter: brightness(1.06); }
+/* Resident-directory email check on request forms */
+.resident-check { margin: 8px 0 0; font-size: .9rem; font-weight: 600; }
+.resident-check.ok { color: #1f7a4d; }
+.resident-check.bad { color: #b3261e; }
+form button:disabled { opacity: .5; cursor: not-allowed; box-shadow: none; }
 
 /* Link list (form-style pages) */
 .link-list { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
