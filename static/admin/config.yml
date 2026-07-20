@@ -51,10 +51,12 @@ collections:
     preview: false
   files:
     - name: "violation-categories"
-      label: "Report of Violation — Categories"
+      label: "Report of Violation Form"
       file: "content/report-violation/_index.md"
       fields:
         - {label: "Title", name: "title", widget: "string"}
+        - {label: "Intro Text", name: "intro", widget: "markdown"}
+        - {label: "Emergency / Notice Box", name: "emergency", widget: "markdown"}
         - label: "Violation Categories"
           name: "categories"
           widget: "list"
@@ -62,4 +64,19 @@ collections:
           summary: "{{fields.title}}"
           fields:
             - {label: "Category Name", name: "title", widget: "string"}
+            - {label: "Description", name: "description", widget: "text"}
+    - name: "security-incident"
+      label: "Security Incident Report Form"
+      file: "content/security-incident/_index.md"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Intro Text", name: "intro", widget: "markdown"}
+        - {label: "Emergency / Notice Box", name: "emergency", widget: "markdown"}
+        - label: "Report Types"
+          name: "categories"
+          widget: "list"
+          label_singular: "Report Type"
+          summary: "{{fields.title}}"
+          fields:
+            - {label: "Type Name", name: "title", widget: "string"}
             - {label: "Description", name: "description", widget: "text"}

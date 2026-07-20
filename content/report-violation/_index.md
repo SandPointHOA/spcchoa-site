@@ -1,5 +1,7 @@
 ---
 title: "Report of Violation"
+intro: "Use this form to let the Board know about a possible violation of the community's Rules & Regulations or CC&Rs. Reports are reviewed by the Board and handled under our governing documents (Bylaws Article XIII). Please describe only what you personally observed, and stick to the facts."
+emergency: "**This form is not for emergencies.** For a crime in progress or any emergency, call 911. For a security incident (theft, prowler, vandalism), use the [Security Incident Report](/security-incident). For an urgent safety concern or dispute between neighbors, please contact the Board directly."
 categories:
   - title: "Speeding / Reckless Driving"
     description: "Exceeding the neighborhood 15 mph limit, or unsafe driving on our streets."

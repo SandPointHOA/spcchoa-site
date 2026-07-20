@@ -3,8 +3,8 @@
 	<section class="sec-full-text">
 		<div class="readable">
 			<h1>Submit a Report of Violation</h1>
-			<p>Use this form to let the Board know about a possible violation of the community's Rules &amp; Regulations or CC&amp;Rs. Reports are reviewed by the Board and handled under our governing documents (Bylaws Article XIII). Please describe only what you personally observed, and stick to the facts.</p>
-			<p class="report-emergency"><strong>This form is not for emergencies.</strong> For a crime in progress or any emergency, call 911. For a security incident (theft, prowler, vandalism), use the <a href="/security-incident">Security Incident Report</a>. For an urgent safety concern or dispute between neighbors, please contact the Board directly.</p>
+			{{ .Params.intro | markdownify }}
+			<div class="report-emergency">{{ .Params.emergency | markdownify }}</div>
 
 			<form class="incident-form" accept-charset="UTF-8" name="report-violation" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success">
 				<ul>

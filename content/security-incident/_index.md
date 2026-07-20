@@ -1,3 +1,20 @@
 ---
 title: "Security Incident Report"
+intro: "Use this form to report a non-emergency security incident to the HOA and our security team. Please select the report type that best fits. If the incident could fall under more than one type, choose one and explain the details in the narrative."
+emergency: "**For an emergency or a crime in progress, always call 911 first.** To reach the on-duty guard directly, call **425-454-5011**. For a police report, contact the Seattle Police North Precinct at **206-625-5011**."
+categories:
+  - title: "Suspicious Activity or Person"
+    description: "A person or behavior that seems out of place or concerning in the neighborhood."
+  - title: "Residential Burglary"
+    description: "Someone entered, or attempted to enter, a home or dwelling unlawfully to commit a crime (includes attempts)."
+  - title: "Theft"
+    description: "Property taken without permission. Does not include items taken from inside a vehicle, or a vehicle itself."
+  - title: "Theft of Property Inside a Vehicle (Car Prowl)"
+    description: "Items taken from inside a vehicle."
+  - title: "Theft of Auto Accessories"
+    description: "Vehicle parts taken without permission (e.g. catalytic converter, wheels, mirrors)."
+  - title: "Property Destruction / Vandalism"
+    description: "Intentional damage to a home, fence, landscaping, or common property."
+  - title: "Graffiti"
+    description: "Property defaced with paint or markings without the owner's permission."
 ---
