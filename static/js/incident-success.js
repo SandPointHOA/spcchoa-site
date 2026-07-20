@@ -13,12 +13,10 @@ function renderVerdict(verdict) {
       `Use the link and packet below — it takes about two minutes.</p>`;
     el("packet-wrap").hidden = false;
   } else {
-    const why = verdict.spdCategory === null
-      ? "This type of report isn't accepted through SPD's online system."
-      : "Because you described a suspect or vehicle, SPD will want to follow up directly.";
     box.innerHTML =
       `<p>⚠️ <strong>Please call the Seattle Police non-emergency line: ` +
-      `<a href="tel:${SPD_NONEMERGENCY}">${SPD_NONEMERGENCY}</a>.</strong> ${why} ` +
+      `<a href="tel:${SPD_NONEMERGENCY}">${SPD_NONEMERGENCY}</a>.</strong> ` +
+      `This type of report isn't accepted through SPD's online system. ` +
       `You can also alert the on-duty guard at <a href="tel:${GUARD}">${GUARD}</a>.</p>`;
     el("packet-wrap").hidden = true;
   }

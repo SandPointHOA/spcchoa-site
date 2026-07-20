@@ -32,19 +32,28 @@ test("eligible type with no suspect => online verdict", () => {
   const v = computeVerdict({ report_type: "Theft", suspect: "" });
   assert.equal(v.level, "online");
   assert.equal(v.spdCategory, "Theft");
-  assert.equal(v.hasSuspect, false);
 });
 
-test("eligible type WITH a suspect description => phone verdict (SPD wants follow-up)", () => {
+test("eligible type WITH a suspect description => still online (routing is category-only)", () => {
   const v = computeVerdict({ report_type: "Theft", suspect: "tall man, red hoodie" });
-  assert.equal(v.level, "phone");
-  assert.equal(v.hasSuspect, true);
+  assert.equal(v.level, "online");
+  assert.equal(v.spdCategory, "Theft");
 });
 
-test("non-eligible type => phone verdict regardless of suspect", () => {
-  const v = computeVerdict({ report_type: "Residential Burglary", suspect: "" });
-  assert.equal(v.level, "phone");
-  assert.equal(v.spdCategory, null);
+test("Property Destruction / Vandalism with a vehicle description => still online", () => {
+  const v = computeVerdict({ report_type: "Property Destruction / Vandalism", suspect: "silver sedan" });
+  assert.equal(v.level, "online");
+  assert.equal(v.spdCategory, "Property Destruction");
+});
+
+test("non-eligible type => phone verdict even with a suspect described", () => {
+  const withSuspect = computeVerdict({ report_type: "Residential Burglary", suspect: "man in hoodie" });
+  assert.equal(withSuspect.level, "phone");
+  assert.equal(withSuspect.spdCategory, null);
+
+  const noSuspect = computeVerdict({ report_type: "Suspicious Activity or Person", suspect: "" });
+  assert.equal(noSuspect.level, "phone");
+  assert.equal(noSuspect.spdCategory, null);
 });
 
 test("car prowl maps to SPD 'Car Break-Ins'", () => {
