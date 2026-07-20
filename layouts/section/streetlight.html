@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div id="main">
+	<section class="sec-full-text">
+		<div class="readable">
+			<h1>Report a Streetlight Outage</h1>
+			<p>Use this form to report a streetlight that's out, flickering, or damaged in the neighborhood. Reports go to the HOA so we can arrange a repair. If a yellow sticker with a pole number is visible on the pole, please include it — it helps us locate the light quickly.</p>
+
+			<form class="incident-form needs-resident-email" accept-charset="UTF-8" name="streetlight-outage" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success">
+				<ul>
+					<p class="hidden" style="display: none;">
+						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+					</p>
+					<li class="single-input">
+						<label for="name">Your Full Name:</label>
+						<input type="text" id="name" name="name" required>
+					</li>
+					<li class="single-input">
+						<label for="email">Your Email Address:</label>
+						<input type="email" id="email" name="email" required>
+					</li>
+					<li class="single-input">
+						<label for="phone">Your Phone Number:</label>
+						<input type="tel" id="phone" name="phone">
+					</li>
+					<li class="single-input">
+						<label for="location">Streetlight Location / Nearest Address:</label>
+						<input type="text" id="location" name="location" placeholder="e.g. in front of 8000 Forest Dr NE, or the nearest cross street" required>
+					</li>
+					<li class="single-input">
+						<label for="pole">Pole Number (yellow sticker, if visible):</label>
+						<input type="text" id="pole" name="pole" placeholder="(optional)">
+					</li>
+					<li class="single-input report-types">
+						<span class="field-label">What's wrong?</span>
+						<label class="report-option">
+							<input type="radio" name="issue" value="Light is out (completely dark)" required>
+							<span class="report-title">Light is out (completely dark)</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="issue" value="Flickering or cycling on and off">
+							<span class="report-title">Flickering or cycling on and off</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="issue" value="On during the day">
+							<span class="report-title">On during the day</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="issue" value="Damaged pole or fixture">
+							<span class="report-title">Damaged pole or fixture</span>
+						</label>
+						<label class="report-option">
+							<input type="radio" name="issue" value="Other">
+							<span class="report-title">Other</span>
+						</label>
+					</li>
+					<li class="single-input">
+						<label for="details">Additional Details:</label>
+						<textarea id="details" name="details" placeholder="(optional) Anything else that helps us locate or fix it."></textarea>
+					</li>
+					<li class="single-input">
+						<label for="attachment">Attach a Photo (optional):</label>
+						<input type="file" id="attachment" name="attachment" accept="image/*">
+					</li>
+					<div data-netlify-recaptcha="true"></div>
+					<li class="single-input">
+						<button type="submit">SUBMIT REPORT</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</section>
+</div>
+<script>window.SPCC_ALLOW = {{ site.Data.resident_emails | default (slice) | jsonify | safeJS }};</script>
+<script src="/js/request-gate.js" defer></script>
+{{ end }}
