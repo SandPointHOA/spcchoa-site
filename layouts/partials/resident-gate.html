@@ -1,0 +1,17 @@
+<script>
+  (function () {
+    function setAuthed(u) { document.body.classList.toggle('is-authed', !!u); }
+    function wire(id) {
+      id.on('init', function (u) { setAuthed(u); });
+      id.on('login', function (u) { setAuthed(u); id.close(); });
+      id.on('logout', function () { setAuthed(null); });
+    }
+    if (window.netlifyIdentity) {
+      wire(window.netlifyIdentity);
+    } else {
+      window.addEventListener('load', function () {
+        if (window.netlifyIdentity) wire(window.netlifyIdentity);
+      });
+    }
+  })();
+</script>

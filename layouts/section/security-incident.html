@@ -6,6 +6,12 @@
 			{{ .Params.intro | markdownify }}
 			<div class="report-emergency">{{ .Params.emergency | markdownify }}</div>
 
+			<div class="gate-locked">
+				<p>Filing a security incident report is available to Sand Point residents. Please log in to continue.</p>
+				<button class="btn-login" type="button" onclick="netlifyIdentity.open('login')">Resident Log In</button>
+			</div>
+
+			<div class="gate-content">
 			<form class="incident-form" accept-charset="UTF-8" name="security-incident" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/incident-filed">
 				<ul>
 					<p class="hidden" style="display: none;">
@@ -63,8 +69,10 @@
 					</li>
 				</ul>
 			</form>
+			</div>
 		</div>
 	</section>
 </div>
 <script type="module" src="/js/incident-form.js"></script>
+{{ partial "resident-gate.html" . }}
 {{ end }}

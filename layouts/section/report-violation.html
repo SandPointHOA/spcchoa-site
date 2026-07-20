@@ -6,6 +6,12 @@
 			{{ .Params.intro | markdownify }}
 			<div class="report-emergency">{{ .Params.emergency | markdownify }}</div>
 
+			<div class="gate-locked">
+				<p>Submitting a report of violation is available to Sand Point residents. Please log in to continue.</p>
+				<button class="btn-login" type="button" onclick="netlifyIdentity.open('login')">Resident Log In</button>
+			</div>
+
+			<div class="gate-content">
 			<form class="incident-form" accept-charset="UTF-8" name="report-violation" enctype="multipart/form-data" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success">
 				<ul>
 					<p class="hidden" style="display: none;">
@@ -64,7 +70,9 @@
 				</ul>
 			</form>
 			<p style="font-size:.88rem;color:#666;">Reports are shared with the Board only. Submitting a report does not guarantee a specific outcome; the Board follows the notice, hearing, and cure process in Bylaws Article XIII.</p>
+			</div>
 		</div>
 	</section>
 </div>
+{{ partial "resident-gate.html" . }}
 {{ end }}

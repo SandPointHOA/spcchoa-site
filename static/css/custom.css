@@ -67,13 +67,15 @@ a.anchor { display: block; position: relative; top: -90px; visibility: hidden; }
 .menu a:hover, .dropbtn:hover { background: var(--surface-2); color: var(--primary); }
 .caret { font-size: .55rem; opacity: .55; }
 .dropdown-content {
-  position: absolute; top: calc(100% + 2px); left: 0; min-width: 230px;
+  position: absolute; top: calc(100% + 8px); left: 0; min-width: 230px;
   background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
   box-shadow: var(--shadow); padding: 6px; display: none; z-index: 120;
 }
 .dropdown-content a { display: block; padding: 9px 12px; border-radius: 7px; font-size: .9rem; color: var(--text); }
 .dropdown-content a:hover { background: var(--surface-2); color: var(--primary); }
 .dropdown:hover .dropdown-content { display: block; }
+/* invisible hover bridge so the menu doesn't close when crossing the gap */
+.dropdown::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 14px; }
 .nav-icon { display: none; }
 .menu-btn, .submenu-btn { display: none; }
 
@@ -260,6 +262,18 @@ form button:hover { filter: brightness(1.04); }
 .incident-form .report-title { font-weight: 700; margin-left: 0.4rem; }
 .incident-form .report-desc { display: block; margin: 0.3rem 0 0 1.6rem; font-size: 0.9em; color: var(--muted); }
 
+/* Resident gate (login required for request forms) */
+.gate-content { display: none; }
+body.is-authed .gate-content { display: block; }
+.gate-locked { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
+  padding: 26px 24px; text-align: center; margin: 18px 0 4px; }
+body.is-authed .gate-locked { display: none; }
+.gate-locked p { margin: 0 0 16px; color: var(--muted); }
+.btn-login { display: inline-block; padding: 12px 28px; border: 0; border-radius: 999px;
+  background: var(--primary); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: .95rem;
+  cursor: pointer; box-shadow: 0 6px 18px rgba(18,122,134,.3); }
+.btn-login:hover { filter: brightness(1.06); }
+
 /* Link list (form-style pages) */
 .link-list { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   box-shadow: var(--shadow); max-width: 800px; margin: 44px auto; padding: 25px 30px; }
@@ -331,6 +345,7 @@ form button:hover { filter: brightness(1.04); }
   .menu > li { width: 100%; }
   .menu a, .dropbtn { width: 100%; padding: 12px 14px; border-radius: 8px; }
   .dropdown:hover .dropdown-content { display: none; }
+  .dropdown::after { display: none; }
   .dropdown-content { position: static; display: none; min-width: 0; border: none; box-shadow: none;
     padding: 0 0 6px 14px; background: transparent; }
   #about-btn:checked ~ #about-content,
