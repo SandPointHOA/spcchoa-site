@@ -71,6 +71,16 @@ auto-pause). Netlify continues to handle form capture, spam protection, and phot
    - Shows the headline: *"Please help our city reduce this type of crime by filing this
      report — with our help."*
    - Computes an **eligibility verdict**:
+
+     > **Revised 2026-07-20 (commit e332d16):** Routing is now **category-only**. The
+     > original design below used a filled "Suspect / Vehicle Description" field as a proxy
+     > for "known suspect" and routed those to the phone line. In real use that proved too
+     > blunt — residents describing a vehicle they saw ("silver sedan") are not the same as
+     > knowing the suspect, and it pushed many online-eligible reports off online filing. The
+     > suspect field is no longer used for routing (it still appears in the packet). The
+     > current rule: **✅ online iff the report type is SPD-online-eligible; ⚠️ phone
+     > otherwise.** The original proxy rule is retained below for historical context.
+
      - ✅ *File online* — report type is SPD-online-eligible AND the "Suspect / Vehicle
        Description" field is empty (our proxy for "no known suspect"). Show SPD portal deep
        link + packet.
