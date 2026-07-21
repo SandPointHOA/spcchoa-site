@@ -330,7 +330,10 @@ form button:disabled { opacity: .5; cursor: not-allowed; box-shadow: none; }
   .card.sec-nav { position: static; max-width: none; }
 }
 
-@media (max-width: 820px) {
+/* The horizontal nav needs ~1030px to fit; below that the last item ran past
+   the viewport and the page scrolled sideways. Hand over to the collapsed
+   menu at 1040px rather than 820px so that gap is covered. */
+@media (max-width: 1040px) {
   /* Mobile nav */
   .nav-icon { display: block; margin-left: auto; width: 34px; height: 30px; cursor: pointer; }
   .nav-icon div, .nav-icon:before, .nav-icon:after { content: ''; display: block; height: 3px; border-radius: 3px;
