@@ -4,6 +4,7 @@ date: 2026-05-25T17:27:00.000-07:00
 draft: false
 tags:
   - newsletter
+featuredImage: /images/sand-point-view-may-2026.jpg
 ---
 
 ## Wall Update — Need Committee Members
