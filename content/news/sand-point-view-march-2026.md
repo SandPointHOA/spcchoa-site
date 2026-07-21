@@ -1,28 +1,39 @@
 ---
 title: "Sand Point View: March 2026"
 date: 2026-03-10T09:04:00.000-08:00
-draft: true
+draft: false
 tags:
   - newsletter
 featuredImage: /images/sand-point-view-march-2026.png
 ---
 
-<!--
-HELD AS A DRAFT — not published. Two things to resolve first:
+*The first issue of the revived* Sand Point View.
 
-1. INCOMPLETE. The March issue was two pages (1.png and 2.png in the
-   original email). Only page 2 was in Downloads, so everything below comes
-   from that page. Page 1 is missing.
+## Annual HOA Meeting
 
-2. KNOWN ERROR ON PAGE 1. On 2026-03-17 Josh flagged to Jamie that the
-   newsletter states "100% of residents would be interested in a study to
-   improve safety." That came from a pie chart of 33 "yes" answers and does
-   not reflect the majority who said no. Jamie acknowledged it. If that
-   line is on page 1, correct or drop it before publishing — don't put a
-   known-wrong statistic on the public site.
+The annual meeting will be hosted on Sunday, March 22 at the country club. This is the meeting to make your voice heard and to ask questions about our neighborhood and what matters to you most. It's also when we vote in new HOA board members — this year we have two open positions.
 
-Set draft: false once page 1 is added and the stat is resolved.
--->
+The board will present on several topics, including priorities for 2026, the annual budget, security, improvement projects, homes under construction, our roads, communications, and our connection with the country club. Please make every effort to have one person from your household attend!
+
+## Security Survey
+
+Approximately 66% of residents completed the security survey, which the board has reviewed in detail. Here's a snapshot of the results, which will be covered in more detail in email and at the annual meeting.
+
+* **74%** would like to keep the current level of guard coverage, but invest in technological improvements (i.e. security/perimeter cameras)
+* **55%** would like to keep the current "cone" placement system to check cars in the evenings
+* **66%** do not want to explore using the east gate as an additional security entrance
+* **31%** would like new security cameras added at the main gate entrance
+* **24%** would like to conduct a study to explore ways to improve safety (i.e. more stop signs, speed cameras, etc.)
+
+> **Correction:** the emailed version of this newsletter reported the last figure as 100%. That question was a single checkbox — residents interested in exploring the option ticked it, and there was no box for those who weren't — so the results chart rendered as one full circle. The accurate figure is **33 of the 137 responding households, or about 24%**. The other percentages above use the same 137-household denominator and are unchanged.
+
+## AJ Kreshock's Hangar2 Team Makes Play to Build World-Class Sports Center
+
+Local homeowner and HOA board member AJ Kreshock is part of a grassroots effort called "Hangar2," which has proposed a campaign to redevelop and renovate the vacant and defunct World War II hangar that has gone to waste in Magnuson Park for decades.
+
+Working on a board with Ray Roberts, a former Seattle Seahawk football player and current Seahawks radio analyst, and Spencer Hawes, a former NBA basketball player, Kreshock and the board have ambitious plans to turn the massive 144,000-square-foot property into a facility for youth sports, technology, arts and other programs. Their vision for the facility would include basketball courts, athletic fields, classrooms and workshops.
+
+The hurdle at hand — it requires city approval and will cost millions of dollars, which they are fundraising for now. Check out the full article in the *Seattle Times*.
 
 ## What Needs Work?
 
@@ -52,5 +63,5 @@ What are some future topics that you'd like us to include in future newsletters?
 
 * **Security contact:** [SandPoint@seafinest.com](mailto:SandPoint@seafinest.com)
 * **Contact the HOA:** [spcchoa@gmail.com](mailto:spcchoa@gmail.com)
-* **Visit our website:** [Sand Point Homeowner's Association](https://spcchoa.com)
+* **Visit our website:** [spcchoa.com](https://spcchoa.com)
 * **Join the WhatsApp Community chat:** SPCC HOA
