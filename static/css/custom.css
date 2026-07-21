@@ -88,7 +88,9 @@ a.anchor { display: block; position: relative; top: -90px; visibility: hidden; }
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center 46%; }
 .hero-scrim { position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(8,32,42,.5) 0%, rgba(8,32,42,.3) 40%, rgba(8,32,42,.85) 100%); }
-.hero-inner { position: relative; padding: 100px 0 112px; }
+/* Vertical padding only — .wrap supplies the horizontal gutter. Using the
+   padding shorthand here would reset it to 0 and let text hit the edge. */
+.hero-inner { position: relative; padding-top: 100px; padding-bottom: 112px; }
 .hero h1 { font-weight: 700; font-size: clamp(2.3rem, 5.2vw, 3.6rem); line-height: 1.06;
   margin: 0 0 18px; color: #fff; text-wrap: balance; text-shadow: 0 2px 20px rgba(0,0,0,.35); max-width: 16em; }
 .hero-lede { font-size: 1.13rem; color: #e7eff0; margin: 0; max-width: 34em; }
@@ -359,7 +361,7 @@ form button:disabled { opacity: .5; cursor: not-allowed; box-shadow: none; }
   .foot-grid { grid-template-columns: 1fr; }
   .foot-bottom { flex-direction: column; }
   .board-grid { grid-template-columns: 1fr; }
-  .hero-inner { padding: 72px 0 84px; }
+  .hero-inner { padding-top: 72px; padding-bottom: 84px; }
   .readable { padding: 24px 20px; margin: 24px auto; }
   .band { padding: 44px 0; }
 }
