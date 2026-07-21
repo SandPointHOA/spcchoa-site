@@ -4,7 +4,7 @@ date: 2026-03-10T09:04:00.000-08:00
 draft: false
 tags:
   - newsletter
-featuredImage: /images/sand-point-view-march-2026.png
+featuredImage: /images/sand-point-view-march-2026.jpg
 ---
 
 *The first issue of the revived* Sand Point View.
@@ -23,9 +23,9 @@ Approximately 66% of residents completed the security survey, which the board ha
 * **55%** would like to keep the current "cone" placement system to check cars in the evenings
 * **66%** do not want to explore using the east gate as an additional security entrance
 * **31%** would like new security cameras added at the main gate entrance
-* **24%** would like to conduct a study to explore ways to improve safety (i.e. more stop signs, speed cameras, etc.)
+* **33 households** would like to conduct a study to explore ways to improve safety (i.e. more stop signs, speed cameras, etc.)
 
-> **Correction:** the emailed version of this newsletter reported the last figure as 100%. That question was a single checkbox — residents interested in exploring the option ticked it, and there was no box for those who weren't — so the results chart rendered as one full circle. The accurate figure is **33 of the 137 responding households, or about 24%**. The other percentages above use the same 137-household denominator and are unchanged.
+> **Correction:** the emailed version of this newsletter reported the last item as 100%. That question was a single opt-in checkbox with no option to decline, so the results chart rendered as one full circle. The real figure is **33 of the 137 responding households** — a meaningful level of interest, but not unanimity. Because there was no way to register disagreement, the households that didn't check the box shouldn't be read as opposed either. The other percentages above use the same 137-household denominator and are unchanged.
 
 ## AJ Kreshock's Hangar2 Team Makes Play to Build World-Class Sports Center
 
