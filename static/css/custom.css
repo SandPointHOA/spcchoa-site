@@ -217,14 +217,18 @@ a.chip:hover { background: rgba(255,255,255,.2); border-color: var(--gold); }
 /* ---------------- Board page ---------------- */
 .board-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: var(--maxw);
   margin: 8px auto 56px; padding: 0 24px; }
-.profile { display: flex; justify-content: space-between; gap: 10px; background: var(--surface);
+.profile { display: flex; flex-direction: column; gap: 8px; background: var(--surface);
   border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; }
 .board-grid .profile { width: 100%; min-width: 0; }
-.profile .user { width: 76px; height: 76px; color: var(--primary); flex: none; }
-.profile > div { min-width: 0; }
-.profile > div > h2 { text-align: right; font-size: 1.15rem; margin: 0; }
-.profile > div > p { text-align: right; margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
-.profile_email { font-size: .82rem; word-break: break-word; }
+.profile-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.profile .user { width: 64px; height: 64px; color: var(--primary); flex: none; }
+.profile-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; }
+.profile-id { min-width: 0; }
+.profile-id > h2 { text-align: right; font-size: 1.1rem; margin: 0; }
+.profile-id > p { text-align: right; margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+/* Email gets the card's full width so addresses stay on one line */
+.profile_email { text-align: right; margin: 0; color: var(--muted); font-size: .8rem;
+  overflow-wrap: anywhere; }
 
 /* ---------------- Forms ---------------- */
 form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
