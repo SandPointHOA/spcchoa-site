@@ -267,6 +267,10 @@ form button:hover { filter: brightness(1.04); }
 .incident-form .report-option:hover { border-color: var(--primary); }
 .incident-form .report-title { font-weight: 700; margin-left: 0.4rem; }
 .incident-form .report-desc { display: block; margin: 0.3rem 0 0 1.6rem; font-size: 0.9em; color: var(--muted); }
+.incident-form .field-help { display: block; margin-top: 0.4rem; font-size: 0.9em; color: var(--muted); line-height: 1.5; }
+.incident-form .report-attest { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 16px; }
+.incident-form .report-attest input { width: auto; height: auto; margin: 0.2rem 0 0; flex: 0 0 auto; }
+.incident-form .report-attest label { margin: 0; font-size: 0.95em; line-height: 1.5; }
 
 /* Resident-directory email check on request forms */
 .resident-check { margin: 8px 0 0; font-size: .9rem; font-weight: 600; }

@@ -29,7 +29,7 @@
 					</li>
 					<li class="single-input">
 						<label for="datetime">Date &amp; Time Observed:</label>
-						<input type="datetime-local" id="datetime" name="datetime">
+						<input type="datetime-local" id="datetime" name="datetime" required>
 					</li>
 					<li class="single-input">
 						<label for="frequency">Is this ongoing or a one-time occurrence?</label>
@@ -56,6 +56,15 @@
 					<li class="single-input">
 						<label for="attachment">Attach a Photo (optional):</label>
 						<input type="file" id="attachment" name="attachment" accept="image/*">
+						<span class="field-help">A photo, a second neighbor who also saw it, or a Ring/Flock clip helps confirm a report. The Property Manager looks for corroboration before any notice is issued; thin or uncorroborated reports are logged for awareness only.</span>
+					</li>
+					<li class="single-input">
+						<label for="witnesses">Other Witnesses or Evidence (optional):</label>
+						<input type="text" id="witnesses" name="witnesses" placeholder="e.g. a neighbor who also saw it, a Ring/Flock clip, or the guard on duty">
+					</li>
+					<li class="report-attest">
+						<input type="checkbox" id="attest" name="attest" value="Certified accurate and personally observed" required>
+						<label for="attest">I certify that this report is accurate and based on what I personally observed. I understand the Board does not act on anonymous or uncorroborated reports.</label>
 					</li>
 					<div data-netlify-recaptcha="true"></div>
 					<li class="single-input">
@@ -63,7 +72,7 @@
 					</li>
 				</ul>
 			</form>
-			<p style="font-size:.88rem;color:#666;">Reports are shared with the Board only. Submitting a report does not guarantee a specific outcome; the Board follows the notice, hearing, and cure process in Bylaws Article XIII.</p>
+			<p style="font-size:.88rem;color:#666;">Reports are shared with the Board and Property Manager only. The Property Manager reviews and investigates each report, and nothing escalates without corroboration. Submitting a report does not guarantee a specific outcome; if a violation is confirmed, the Board follows the notice, hearing, and cure process in Bylaws Article XIII, serving as a neutral hearing panel.</p>
 		</div>
 	</section>
 </div>

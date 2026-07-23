@@ -1,6 +1,6 @@
 ---
 title: "Report of Violation"
-intro: "Use this form to let the Board know about a possible violation of the community's Rules & Regulations or CC&Rs. Reports are reviewed by the Board and handled under our governing documents (Bylaws Article XIII). Please describe only what you personally observed, and stick to the facts."
+intro: "Use this form to let the Board know about a possible violation of the community's Rules & Regulations or CC&Rs. Reports must be on the record — we need your name and the date, time, and location of what you saw (Regulation 7). The Property Manager reviews and investigates each report on the Board's behalf and looks for corroboration before any notice is issued. If a violation is confirmed, the Board follows the notice, hearing, and cure process in our governing documents (Bylaws Article XIII). Please describe only what you personally observed, and stick to the facts."
 emergency: "**This form is not for emergencies.** For a crime in progress or any emergency, call 911. For a security incident (theft, prowler, vandalism), use the [Security Incident Report](/security-incident). For an urgent safety concern or dispute between neighbors, please contact the Board directly."
 categories:
   - title: "Speeding / Reckless Driving"
