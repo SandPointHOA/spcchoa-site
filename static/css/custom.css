@@ -85,7 +85,7 @@ a.anchor { display: block; position: relative; top: -90px; visibility: hidden; }
 
 /* ---------------- Homepage: Hero ---------------- */
 .hero { position: relative; color: #fff; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center 46%; }
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center 68%; }
 .hero-scrim { position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(8,32,42,.5) 0%, rgba(8,32,42,.3) 40%, rgba(8,32,42,.85) 100%); }
 /* Vertical padding only — .wrap supplies the horizontal gutter. Using the
