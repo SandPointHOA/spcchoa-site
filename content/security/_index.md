@@ -16,7 +16,7 @@ Guards conduct community-wide patrols and maintain a security presence at club a
 If you observe suspicious activity or a security concern:
 
 1. **For emergencies, always call 911 first.**
-2. Call the on-duty guard directly at **425-454-5011**, or email **[SandPoint@seafinest.com](mailto:SandPoint@seafinest.com)**.
+2. Call the on-duty guard directly at **206-310-7284**, or email **[SandPoint@seafinest.com](mailto:SandPoint@seafinest.com)**.
 3. You may also contact the HOA board member assigned to security, Josh Hritz, at **[joshua.hritz@gmail.com](mailto:joshua.hritz@gmail.com)**.
 
 ## Reporting a Crime

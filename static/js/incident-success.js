@@ -1,7 +1,7 @@
 import { computeVerdict, buildPacketFields, packetToText } from "/js/incident-logic.js";
 
 const SPD_NONEMERGENCY = "206-625-5011";
-const GUARD = "425-454-5011";
+const GUARD = "206-310-7284";
 
 function el(id) { return document.getElementById(id); }
 

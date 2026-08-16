@@ -1,7 +1,7 @@
 ---
 title: "Security Incident Report"
 intro: "Use this form to report a non-emergency security incident to the HOA and our security team. Please select the report type that best fits. If the incident could fall under more than one type, choose one and explain the details in the narrative."
-emergency: "**For an emergency or a crime in progress, always call 911 first.** To reach the on-duty guard directly, call **425-454-5011**. For a police report, contact the Seattle Police North Precinct at **206-625-5011**."
+emergency: "**For an emergency or a crime in progress, always call 911 first.** To reach the on-duty guard directly, call **206-310-7284**. For a police report, contact the Seattle Police North Precinct at **206-625-5011**."
 categories:
   - title: "Suspicious Activity or Person"
     description: "A person or behavior that seems out of place or concerning in the neighborhood."

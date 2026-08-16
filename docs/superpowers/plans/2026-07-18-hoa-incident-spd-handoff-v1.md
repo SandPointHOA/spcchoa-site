@@ -14,7 +14,7 @@
 - **Preserve every existing form field and its `name` attribute** in `layouts/section/security-incident.html`: `name`, `email`, `phone`, `location`, `datetime`, `report_type`, `narrative`, `suspect`, `police_case`, `attachment`, plus the `bot-field` honeypot and `data-netlify-recaptcha`.
 - No new runtime dependencies / no `package.json` required — tests run under `node --test`.
 - The 7 report types are exactly: `Suspicious Activity or Person`, `Residential Burglary`, `Theft`, `Theft of Property Inside a Vehicle (Car Prowl)`, `Theft of Auto Accessories`, `Property Destruction / Vandalism`, `Graffiti`.
-- Phone numbers (verbatim): SPD non-emergency `206-625-5011`; on-duty guard shack `425-454-5011`; emergencies `911`.
+- Phone numbers (verbatim): SPD non-emergency `206-625-5011`; on-duty guard shack `206-310-7284`; emergencies `911`.
 - SPD online portal deep link: `https://spdonlinereporting.seattle.gov/`.
 - Confirmation headline (verbatim): **"Please help our city reduce this type of crime by filing this report — with our help."**
 - The 911 reminder is ALWAYS shown on the confirmation screen. No keyword-based emergency detection (unreliable; would give false confidence).
@@ -286,7 +286,7 @@ Create `layouts/section/incident-filed.html`:
 	<section class="sec-full-text">
 		<div class="readable">
 			<h1>Thank you — your report was sent to the HOA.</h1>
-			<p class="report-emergency"><strong>For an emergency or a crime in progress, always call 911 first.</strong> To reach the on-duty guard directly, call <strong>425-454-5011</strong>.</p>
+			<p class="report-emergency"><strong>For an emergency or a crime in progress, always call 911 first.</strong> To reach the on-duty guard directly, call <strong>206-310-7284</strong>.</p>
 
 			<div id="spd-handoff" hidden>
 				<h2>Please help our city reduce this type of crime by filing this report — with our help.</h2>
@@ -320,7 +320,7 @@ Create `static/js/incident-success.js`:
 import { computeVerdict, buildPacketFields, packetToText } from "/js/incident-logic.js";
 
 const SPD_NONEMERGENCY = "206-625-5011";
-const GUARD = "425-454-5011";
+const GUARD = "206-310-7284";
 
 function el(id) { return document.getElementById(id); }
 
@@ -404,7 +404,7 @@ main();
 Run: `cd /Users/joshuahritz/spcchoa-site && hugo --gc --minify`
 Expected: build succeeds; `public/incident-filed/index.html` exists and contains the headline and `id="spd-handoff"`.
 
-Manual check: `hugo server -D`, open `http://localhost:1313/security-incident/`, fill the form with report type **Theft** and an empty suspect field, submit. Because there is no live Netlify backend locally, the POST will 404 — that is expected; the value is already in `sessionStorage`. Navigate manually to `http://localhost:1313/incident-filed/` and confirm: headline shows, ✅ online verdict shows, packet lists all 8 fields, "Copy all" works. Then repeat with report type **Residential Burglary** (or Theft + a suspect description) and confirm the ⚠️ phone verdict with both `206-625-5011` and `425-454-5011`.
+Manual check: `hugo server -D`, open `http://localhost:1313/security-incident/`, fill the form with report type **Theft** and an empty suspect field, submit. Because there is no live Netlify backend locally, the POST will 404 — that is expected; the value is already in `sessionStorage`. Navigate manually to `http://localhost:1313/incident-filed/` and confirm: headline shows, ✅ online verdict shows, packet lists all 8 fields, "Copy all" works. Then repeat with report type **Residential Burglary** (or Theft + a suspect description) and confirm the ⚠️ phone verdict with both `206-625-5011` and `206-310-7284`.
 
 - [ ] **Step 5: Commit**
 
